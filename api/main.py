@@ -20,7 +20,7 @@ var_dict = \
 def home_page():
     return "First Test"
 
-@app.get("/post1")
+@app.get("/posts1")
 def get_posts_1():
     return "Our First Posts Retrieval", var_dict
 
@@ -32,5 +32,4 @@ def get_one_post_1(num: int):
 from fastapi import Body
 @app.post("/post1")
 def create_post(my_post: dict=Body(...)):
-    return ("First Create Post", my_post['message'],
-            my_post['comment'])
+    return "First Create Post", my_post
