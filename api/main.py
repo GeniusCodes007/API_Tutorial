@@ -3,18 +3,18 @@ from fastapi import FastAPI
 app = FastAPI()
 
 var_dict = \
-    {
-    1: {'message': "Post 1 Retrieved",
+    [
+    {'message 1': "Post 1 Retrieved",
      'status': "Successful"},
-    2: {'message': "Post 2 Retrieved",
+    {'message 2': "Post 2 Retrieved",
          'status': "Successful"},
-    3: {'message': "Post 3 Retrieved",
+    {'message 3': "Post 3 Retrieved",
          'status': "Successful"},
-    4: {'message': "Post 4 Retrieved",
+    {'message 4': "Post 4 Retrieved",
          'status': "Successful"},
-    5: {'message': "Post 5 Retrieved",
+    {'message 5': "Post 5 Retrieved",
          'status': "Successful"},
-}
+]
 
 @app.get("/")
 def home_page():
@@ -30,6 +30,9 @@ def get_one_post_1(num: int):
 
 #First we convert the parameter to a dictionary using the Body class from fastapi
 from fastapi import Body
+
+
 @app.post("/post1")
 def create_post(my_post: dict=Body(...)):
+    var_dict.append(my_post)
     return "First Create Post", my_post
