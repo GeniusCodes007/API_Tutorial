@@ -3,25 +3,25 @@ Here, we are going to be using the Pydantic schema features to extract informati
 """
 
 from fastapi import FastAPI
-from .my_pydantic_models import Student_Info
+from my_pydantic_models import Example
 
 app = FastAPI()
 
 var_dict = \
     [
-    {'message 1': "Post 1 Retrieved",
+    {'message': "Post 1 Retrieved",
      'status': "Successful",
      'id': 1},
-    {'message 2': "Post 2 Retrieved",
+    {'message': "Post 2 Retrieved",
          'status': "Successful",
      'id': 2},
-    {'message 3': "Post 3 Retrieved",
+    {'message': "Post 3 Retrieved",
          'status': "Successful",
      'id': 3},
-    {'message 4': "Post 4 Retrieved",
+    {'message': "Post 4 Retrieved",
          'status': "Successful",
      'id': 4},
-    {'message 5': "Post 5 Retrieved",
+    {'message': "Post 5 Retrieved",
          'status': "Successful",
      'id': 5},
 ]
@@ -33,18 +33,28 @@ var_dict = \
 # U -> Update
 # D -> Delete
 
-@app.post("/post")
-def create_post(my_post: Student_Info):
+@app.get("/")
+def root():
+    return "We are beginning to work with dictionaries"
+
+@app.get("/postman")
+def page1():
+    return """We are beginning to work with dictionaries
+    This works on PostMan"""
+
+@app.post("/posts")
+def create_post(my_post: Example):
+    # Extract the value of 'id' in my_post [which is stored as an object of the Student_Info class] and assign it a value
     my_post.id = len(var_dict) +1
     var_dict.append(my_post.model_dump())
-    full_Name= f"{my_post.surname} {my_post.first_name} {my_post.other_names}"
-    return full_Name, var_dict
+    full_info= f"{my_post.message}; {my_post.status}; {my_post.id}"
+    return full_info
 
 @app.get("/posts")
 def get_posts():
     return var_dict
 
-@app.get("/post/{id_}")
+@app.get("/posts/{id_}")
 def get_post(id_: int):
     for x in range(len(var_dict)):
         if var_dict[x]['id'] == id_:
@@ -64,7 +74,7 @@ def check():
             print(f"{x} Not Here")
     return m
 
-@app.delete("/post/{id_}")
+@app.delete("/posts/{id_}")
 def delete(id_: int):
     print(f"check() is {check()}")
     for x in check():
