@@ -1,10 +1,8 @@
-"""
-Here, we are going to be using the Pydantic schema features to extract information from our endpoints
-"""
+from fastapi import FastAPI, Response, status, HTTPException
+from status_pydantic_models import Student_Info
 
-from fastapi import FastAPI, Response
-from my_pydantic_models import Student_Info
 
+# When the API user's request is not found and yet the system does not crash, we would love to set the API response status code to something that would help the user to know what's going on.
 app = FastAPI()
 
 var_dict = \
@@ -48,46 +46,80 @@ var_dict = \
 # U -> Update
 # D -> Delete
 
-@app.post("/posts")
+def check_serial(id_: int):
+    count = 0
+    try:
+        while count < len(var_dict):
+            if var_dict[count]['serial_number'] == id_:
+                break
+            count += 1
+        return var_dict[count]
+    except IndexError:
+        return None
+
+def check_name(name: str)-> dict | None:
+    count = 0
+    result = ()
+    try:
+        while count < len(var_dict):
+            if var_dict[count]['surname'] == name or var_dict[count]['first_name'] == name or var_dict[count]['other_names'] == name:
+                result += var_dict[count],
+            count += 1
+        return result
+    except IndexError:
+        return None
+
+@app.post("/post student info")
 def create_post(my_post: Student_Info):
     my_post.serial_number = len(var_dict) +1
     var_dict.append(my_post.model_dump())
     full_Name= f"{my_post.surname} {my_post.first_name} {my_post.other_names}"
-    print(full_Name)
-    return var_dict
+    raise HTTPException(status_code=status.HTTP_201_CREATED, detail=full_Name)
 
-@app.get("/posts")
+@app.get("/all students' info")
 def get_posts():
     return var_dict
 
-@app.get("/post/{id_}")
-def get_post(id_: int, my_response: Response):
-    for x in range(len(var_dict)):
-        if var_dict[x]['serial_number'] == id_:
-            return var_dict[x]
-    return None
+# Here we set it to a status code '404', BY
 
-@app.get("/check")
-def check():
-    m = ()
-    for x in range(len(var_dict)):
-        m += (x+1,)
-    for x in m:
-        if var_dict[x-1]['id'] in m:
-            pass
-        else:
-            print(f"{x} Not Here")
-    return m
+@app.get("/student id/{id_}")
+def get_student_id(id_: int, my_response: Response):
+    result = check_serial(id_)
+    if not result:
+        my_response.status_code = status.HTTP_404_NOT_FOUND
+        return "This Student does not exist"
+    return result
 
-@app.delete("/post/{id_}")
+#  OR
+
+@app.get("/student name/{name}")
+def get_student_name(name: str):
+    result = check_name(name)
+    if not result:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"No Student as {name}")
+    return result
+
+@app.delete("/delete student info/{id_}", status_code=204)
 def delete(id_: int):
-    print(f"check() is {check()}")
-    for x in check():
-        print(f"for {x}: {var_dict[x - 1]}")
-        print(f"then {var_dict[x-1]['id']}")
-        if var_dict[x-1]['id'] == id_:
-            wanted = var_dict[id_-1]
-            print(wanted)
-            var_dict.remove(wanted)
-            return f"{wanted}"
-    return "Not Found"
+    print(type(check_serial(id_)))
+    if not check_serial(id_):
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Student does not exist")
+
+    var_dict.remove(check_serial(id_))
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
+
+@app.patch("/update student info/{id_}")
+def update(id_: int, my_post: Student_Info):
+    result = check_serial(id_)
+    if not result:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Student does not exist")
+    # First convert the Student_Info class instance, 'my_post' into a proper dictionary
+    my_update = my_post.model_dump()
+    result['serial_number'] = id_
+    result['surname'] = my_update['surname']
+    result['first_name'] = my_update['first_name']
+    result['other_names'] = my_update['other_names']
+    result['age'] = my_update['age']
+    result['residential_address'] = my_update['residential_address']
+
+    return result

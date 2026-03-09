@@ -16,6 +16,730 @@
         "documentation": {}
     },
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "User_Info",
+        "importPath": "database_schemas",
+        "description": "database_schemas",
+        "isExtraImport": true,
+        "detail": "database_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Personal_Info",
+        "importPath": "database_schemas",
+        "description": "database_schemas",
+        "isExtraImport": true,
+        "detail": "database_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Set_Personal_Info",
+        "importPath": "database_schemas",
+        "description": "database_schemas",
+        "isExtraImport": true,
+        "detail": "database_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "RealDictCursor",
+        "importPath": "psycopg2.extras",
+        "description": "psycopg2.extras",
+        "isExtraImport": true,
+        "detail": "psycopg2.extras",
+        "documentation": {}
+    },
+    {
+        "label": "RealDictCursor",
+        "importPath": "psycopg2.extras",
+        "description": "psycopg2.extras",
+        "isExtraImport": true,
+        "detail": "psycopg2.extras",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordRequestForm",
+        "importPath": "fastapi.security.oauth2",
+        "description": "fastapi.security.oauth2",
+        "isExtraImport": true,
+        "detail": "fastapi.security.oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security.oauth2",
+        "description": "fastapi.security.oauth2",
+        "isExtraImport": true,
+        "detail": "fastapi.security.oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "orm_models,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "orm_models.",
+        "description": "orm_models.",
+        "detail": "orm_models.",
+        "documentation": {}
+    },
+    {
+        "label": "orm_database",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "orm_database",
+        "description": "orm_database",
+        "detail": "orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "importPath": "orm_database",
+        "description": "orm_database",
+        "isExtraImport": true,
+        "detail": "orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "database_engine",
+        "importPath": "orm_database",
+        "description": "orm_database",
+        "isExtraImport": true,
+        "detail": "orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "orm_database",
+        "description": "orm_database",
+        "isExtraImport": true,
+        "detail": "orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "importPath": "orm_database",
+        "description": "orm_database",
+        "isExtraImport": true,
+        "detail": "orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "importPath": "orm_database",
+        "description": "orm_database",
+        "isExtraImport": true,
+        "detail": "orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "orm_posts,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "orm_posts.",
+        "description": "orm_posts.",
+        "detail": "orm_posts.",
+        "documentation": {}
+    },
+    {
+        "label": "orm_models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "orm_models",
+        "description": "orm_models",
+        "detail": "orm_models",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy.sql.expression",
+        "description": "sqlalchemy.sql.expression",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql.expression",
+        "documentation": {}
+    },
+    {
+        "label": "TIMESTAMP",
+        "importPath": "sqlalchemy.sql.sqltypes",
+        "description": "sqlalchemy.sql.sqltypes",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql.sqltypes",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "orm_schemas,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "orm_schemas.",
+        "description": "orm_schemas.",
+        "detail": "orm_schemas.",
+        "documentation": {}
+    },
+    {
+        "label": "fastapi.exceptions",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy.exc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "orm_schemas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "orm_schemas",
+        "description": "orm_schemas",
+        "detail": "orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "orm_oauth2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "orm_oauth2",
+        "description": "orm_oauth2",
+        "detail": "orm_oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "Example",
+        "importPath": "pydantic_schemas.my_pydantic_models",
+        "description": "pydantic_schemas.my_pydantic_models",
+        "isExtraImport": true,
+        "detail": "pydantic_schemas.my_pydantic_models",
+        "documentation": {}
+    },
+    {
+        "label": "Student_Info",
+        "importPath": "status_pydantic_models",
+        "description": "status_pydantic_models",
+        "isExtraImport": true,
+        "detail": "status_pydantic_models",
+        "documentation": {}
+    },
+    {
         "label": "annotations",
         "importPath": "__future__",
         "description": "__future__",
@@ -55,7 +779,7 @@
         "kind": 2,
         "importPath": "api.main",
         "description": "api.main",
-        "peekOfCode": "def home_page():\n    return \"First Test\"\n@app.get(\"/post1\")\ndef get_posts_1():\n    return \"Our First Posts Retrieval\", var_dict\n@app.get(\"/post1/{num}\")\ndef get_one_post_1(num: int):\n    return \"Our First One Post Retrieval\", var_dict[num]\n#First we convert the parameter to a dictionary using the Body class from fastapi\nfrom fastapi import Body",
+        "peekOfCode": "def home_page():\n    return \"First Test\"\n@app.get(\"/posts1\")\ndef get_posts_1():\n    return \"Our First Posts Retrieval\", var_dict\n@app.get(\"/post1/{num}\")\ndef get_one_post_1(num: int):\n    return \"Our First One Post Retrieval\", var_dict[num]\n#First we convert the parameter to a dictionary using the Body class from fastapi\nfrom fastapi import Body",
         "detail": "api.main",
         "documentation": {}
     },
@@ -64,7 +788,7 @@
         "kind": 2,
         "importPath": "api.main",
         "description": "api.main",
-        "peekOfCode": "def get_posts_1():\n    return \"Our First Posts Retrieval\", var_dict\n@app.get(\"/post1/{num}\")\ndef get_one_post_1(num: int):\n    return \"Our First One Post Retrieval\", var_dict[num]\n#First we convert the parameter to a dictionary using the Body class from fastapi\nfrom fastapi import Body\n@app.post(\"/post1\")\ndef create_post(my_post: dict=Body(...)):\n    return (\"First Create Post\", my_post['message'],",
+        "peekOfCode": "def get_posts_1():\n    return \"Our First Posts Retrieval\", var_dict\n@app.get(\"/post1/{num}\")\ndef get_one_post_1(num: int):\n    return \"Our First One Post Retrieval\", var_dict[num]\n#First we convert the parameter to a dictionary using the Body class from fastapi\nfrom fastapi import Body\n@app.post(\"/post1\")\ndef create_post(my_post: dict=Body(...)):\n    var_dict.append(my_post)",
         "detail": "api.main",
         "documentation": {}
     },
@@ -73,7 +797,7 @@
         "kind": 2,
         "importPath": "api.main",
         "description": "api.main",
-        "peekOfCode": "def get_one_post_1(num: int):\n    return \"Our First One Post Retrieval\", var_dict[num]\n#First we convert the parameter to a dictionary using the Body class from fastapi\nfrom fastapi import Body\n@app.post(\"/post1\")\ndef create_post(my_post: dict=Body(...)):\n    return (\"First Create Post\", my_post['message'],\n            my_post['comment'])",
+        "peekOfCode": "def get_one_post_1(num: int):\n    return \"Our First One Post Retrieval\", var_dict[num]\n#First we convert the parameter to a dictionary using the Body class from fastapi\nfrom fastapi import Body\n@app.post(\"/post1\")\ndef create_post(my_post: dict=Body(...)):\n    var_dict.append(my_post)\n    return \"First Create Post\", my_post",
         "detail": "api.main",
         "documentation": {}
     },
@@ -82,7 +806,7 @@
         "kind": 2,
         "importPath": "api.main",
         "description": "api.main",
-        "peekOfCode": "def create_post(my_post: dict=Body(...)):\n    return (\"First Create Post\", my_post['message'],\n            my_post['comment'])",
+        "peekOfCode": "def create_post(my_post: dict=Body(...)):\n    var_dict.append(my_post)\n    return \"First Create Post\", my_post",
         "detail": "api.main",
         "documentation": {}
     },
@@ -91,7 +815,7 @@
         "kind": 5,
         "importPath": "api.main",
         "description": "api.main",
-        "peekOfCode": "app = FastAPI()\nvar_dict = \\\n    {\n    1: {'message': \"Post 1 Retrieved\",\n     'status': \"Successful\"},\n    2: {'message': \"Post 2 Retrieved\",\n         'status': \"Successful\"},\n    3: {'message': \"Post 3 Retrieved\",\n         'status': \"Successful\"},\n    4: {'message': \"Post 4 Retrieved\",",
+        "peekOfCode": "app = FastAPI()\nvar_dict = \\\n    [\n    {'message 1': \"Post 1 Retrieved\",\n     'status': \"Successful\"},\n    {'message 2': \"Post 2 Retrieved\",\n         'status': \"Successful\"},\n    {'message 3': \"Post 3 Retrieved\",\n         'status': \"Successful\"},\n    {'message 4': \"Post 4 Retrieved\",",
         "detail": "api.main",
         "documentation": {}
     },
@@ -100,8 +824,768 @@
         "kind": 5,
         "importPath": "api.main",
         "description": "api.main",
-        "peekOfCode": "var_dict = \\\n    {\n    1: {'message': \"Post 1 Retrieved\",\n     'status': \"Successful\"},\n    2: {'message': \"Post 2 Retrieved\",\n         'status': \"Successful\"},\n    3: {'message': \"Post 3 Retrieved\",\n         'status': \"Successful\"},\n    4: {'message': \"Post 4 Retrieved\",\n         'status': \"Successful\"},",
+        "peekOfCode": "var_dict = \\\n    [\n    {'message 1': \"Post 1 Retrieved\",\n     'status': \"Successful\"},\n    {'message 2': \"Post 2 Retrieved\",\n         'status': \"Successful\"},\n    {'message 3': \"Post 3 Retrieved\",\n         'status': \"Successful\"},\n    {'message 4': \"Post 4 Retrieved\",\n         'status': \"Successful\"},",
         "detail": "api.main",
+        "documentation": {}
+    },
+    {
+        "label": "User_Info",
+        "kind": 6,
+        "importPath": "fast_api_and_databases.database_schemas",
+        "description": "fast_api_and_databases.database_schemas",
+        "peekOfCode": "class User_Info(BaseModel):\n    surname: str\n    firstname:str\n    other_name:str = \"\"\n    username:str\n    email:str\n    phone_contact: str\n    id:int = ''\n    signed_up_at:Optional[str] = ''\nclass Personal_Info(BaseModel):",
+        "detail": "fast_api_and_databases.database_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Personal_Info",
+        "kind": 6,
+        "importPath": "fast_api_and_databases.database_schemas",
+        "description": "fast_api_and_databases.database_schemas",
+        "peekOfCode": "class Personal_Info(BaseModel):\n    surname: str\n    firstname:str\n    other_names:str\n    id:int = ''\nclass Set_Personal_Info(BaseModel):\n    surname: str\n    firstname:str\n    other_names:str",
+        "detail": "fast_api_and_databases.database_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Set_Personal_Info",
+        "kind": 6,
+        "importPath": "fast_api_and_databases.database_schemas",
+        "description": "fast_api_and_databases.database_schemas",
+        "peekOfCode": "class Set_Personal_Info(BaseModel):\n    surname: str\n    firstname:str\n    other_names:str",
+        "detail": "fast_api_and_databases.database_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "read_root",
+        "kind": 2,
+        "importPath": "fast_api_and_databases.main",
+        "description": "fast_api_and_databases.main",
+        "peekOfCode": "def read_root():\n    return {\"Hello\": \"World\"}\n@app.get(\"/get all info\")\ndef get_users_info():\n    my_cursor.execute(\"\"\"select * from user_info order by id asc\"\"\")\n    info = my_cursor.fetchall()\n    return info\n\"\"\"surname: str\n    firstname:str\n    other_names:str",
+        "detail": "fast_api_and_databases.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_users_info",
+        "kind": 2,
+        "importPath": "fast_api_and_databases.main",
+        "description": "fast_api_and_databases.main",
+        "peekOfCode": "def get_users_info():\n    my_cursor.execute(\"\"\"select * from user_info order by id asc\"\"\")\n    info = my_cursor.fetchall()\n    return info\n\"\"\"surname: str\n    firstname:str\n    other_names:str\n    username:str\n    email:str\n    phone_contact: str",
+        "detail": "fast_api_and_databases.main",
+        "documentation": {}
+    },
+    {
+        "label": "post_info",
+        "kind": 2,
+        "importPath": "fast_api_and_databases.main",
+        "description": "fast_api_and_databases.main",
+        "peekOfCode": "def post_info(user_info: User_Info, response:Response):\n    data =user_info.model_dump()\n    try:\n        my_cursor.execute(\"\"\"INSERT INTO user_info ( username, surname,firstname, email, phone_contact) VALUES ($s, $s, $s, $s, $s) RETURNING * \"\"\",\n                          (data[\"username\"], data[\"surname\"],\n                           data[\"firstname\"], data[\"email\"],\n                           data[\"phone_contact\"]))\n        user_data = my_cursor.fetchall()\n        connection.commit()\n        return user_data",
+        "detail": "fast_api_and_databases.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "fast_api_and_databases.main",
+        "description": "fast_api_and_databases.main",
+        "peekOfCode": "app = FastAPI()\nwhile True:\n    try:\n        connection = psycopg2.connect(host='localhost', database='fastapi app database', user='postgres',\n                                      password='GENIUSCODES07', cursor_factory=RealDictCursor)\n        my_cursor = connection.cursor()\n        print(\"Connected to database\")\n        break\n    except ImportError as my_error:\n        print(\"The Issue is \",my_error)",
+        "detail": "fast_api_and_databases.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_info",
+        "kind": 2,
+        "importPath": "fast_api_and_databases.second",
+        "description": "fast_api_and_databases.second",
+        "peekOfCode": "def get_all_info():\n    conn_cursor.execute(\"\"\"select * from personal_data\"\"\")\n    info = conn_cursor.fetchall()\n    return info\n@app.post(\"/post info\", status_code=status.HTTP_201_CREATED)\ndef post_info(posting_info: Personal_Info):\n    conn_cursor.execute(\"\"\"INSERT INTO personal_data (id, surname, firstname, other_names) VALUES (%s,%s,%s,%s)\"\"\",\n                        (posting_info.id, posting_info.surname, posting_info.firstname, posting_info.other_names,),)\n    return f\"Post Creation Successful\"\n@app.get(\"/get one info/{id_}\")",
+        "detail": "fast_api_and_databases.second",
+        "documentation": {}
+    },
+    {
+        "label": "post_info",
+        "kind": 2,
+        "importPath": "fast_api_and_databases.second",
+        "description": "fast_api_and_databases.second",
+        "peekOfCode": "def post_info(posting_info: Personal_Info):\n    conn_cursor.execute(\"\"\"INSERT INTO personal_data (id, surname, firstname, other_names) VALUES (%s,%s,%s,%s)\"\"\",\n                        (posting_info.id, posting_info.surname, posting_info.firstname, posting_info.other_names,),)\n    return f\"Post Creation Successful\"\n@app.get(\"/get one info/{id_}\")\ndef get_one_info(id_: int):\n    try:\n        conn_cursor.execute(\"\"\"select * from personal_data where id = %s\"\"\", (str(id_),))\n        test_post = conn_cursor.fetchone()\n        if not test_post:",
+        "detail": "fast_api_and_databases.second",
+        "documentation": {}
+    },
+    {
+        "label": "get_one_info",
+        "kind": 2,
+        "importPath": "fast_api_and_databases.second",
+        "description": "fast_api_and_databases.second",
+        "peekOfCode": "def get_one_info(id_: int):\n    try:\n        conn_cursor.execute(\"\"\"select * from personal_data where id = %s\"\"\", (str(id_),))\n        test_post = conn_cursor.fetchone()\n        if not test_post:\n            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,\n                                detail=f\"Data of {id_} not in database\")\n        return test_post\n    except Exception as err :\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,",
+        "detail": "fast_api_and_databases.second",
+        "documentation": {}
+    },
+    {
+        "label": "delete_info",
+        "kind": 2,
+        "importPath": "fast_api_and_databases.second",
+        "description": "fast_api_and_databases.second",
+        "peekOfCode": "def delete_info(persona_id_: int):\n    try:\n        conn_cursor.execute(\"\"\"delete from personal_data where id = %s returning * \"\"\", (str(persona_id_),))\n        post = conn_cursor.fetchone()\n        connection.commit()\n        return {\"Data deleted successfully\": post}\n    except Exception as err :\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,\n                            detail=f\"The error is {err}    \"\n                                   f\"Data not found\")",
+        "detail": "fast_api_and_databases.second",
+        "documentation": {}
+    },
+    {
+        "label": "update_info",
+        "kind": 2,
+        "importPath": "fast_api_and_databases.second",
+        "description": "fast_api_and_databases.second",
+        "peekOfCode": "def update_info(persona_id_: int, set_person_info: Set_Personal_Info):\n    conn_cursor.execute(\"\"\"update personal_data set surname= %s, firstname=%s, other_names=%s where id = %s returning * \"\"\",\n                        (set_person_info.surname, set_person_info.firstname, set_person_info.other_names, persona_id_,),)\n    connection.commit()\n@app.get(\"search by first letter/{name}\")\ndef search_by_first_letter(name: str):\n    conn_cursor.execute(\"\"\"select * from where surname like %s\"\"\",\n                        (name,),)\n    post = conn_cursor.fetchall()\n    return post",
+        "detail": "fast_api_and_databases.second",
+        "documentation": {}
+    },
+    {
+        "label": "search_by_first_letter",
+        "kind": 2,
+        "importPath": "fast_api_and_databases.second",
+        "description": "fast_api_and_databases.second",
+        "peekOfCode": "def search_by_first_letter(name: str):\n    conn_cursor.execute(\"\"\"select * from where surname like %s\"\"\",\n                        (name,),)\n    post = conn_cursor.fetchall()\n    return post",
+        "detail": "fast_api_and_databases.second",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "fast_api_and_databases.second",
+        "description": "fast_api_and_databases.second",
+        "peekOfCode": "app = FastAPI()\ntry:\n    connection = psycopg2.connect(host=\"localhost\", database=\"fastapi app database\", user='postgres',\n                          password=\"GENIUSCODES07\",cursor_factory=RealDictCursor)\n    conn_cursor= connection.cursor()\n    print(\"Connected to database\")\nexcept Exception as e:\n    print(\"The error is \", e)\n@app.get(\"/get all info\")\ndef get_all_info():",
+        "detail": "fast_api_and_databases.second",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_auth",
+        "description": "orm_database_lesson.orm_auth",
+        "peekOfCode": "def login_user(user_credential: OAuth2PasswordRequestForm= Depends(),db: Session= Depends(get_database)):\n    # Check the database for the email passed\n    loginUser_by_email = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.email == user_credential.username).first()\n    # Check the database for the username passed\n    loginUser_by_username = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.username == user_credential.username).first()\n    # Validate, if found\n    if loginUser_by_email :\n        work_with = loginUser_by_email\n    elif loginUser_by_username:\n        work_with = loginUser_by_username",
+        "detail": "orm_database_lesson.orm_auth",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_auth",
+        "description": "orm_database_lesson.orm_auth",
+        "peekOfCode": "router = APIRouter(tags=['Authentication'],)\n@router.post(\"/login\", response_model=orm_schemas.Token)\ndef login_user(user_credential: OAuth2PasswordRequestForm= Depends(),db: Session= Depends(get_database)):\n    # Check the database for the email passed\n    loginUser_by_email = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.email == user_credential.username).first()\n    # Check the database for the username passed\n    loginUser_by_username = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.username == user_credential.username).first()\n    # Validate, if found\n    if loginUser_by_email :\n        work_with = loginUser_by_email",
+        "detail": "orm_database_lesson.orm_auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_database",
+        "description": "orm_database_lesson.orm_database",
+        "peekOfCode": "def get_database():\n    db_conn = SessionLocal()\n    try:\n        yield db_conn\n    finally:\n        db_conn.close()",
+        "detail": "orm_database_lesson.orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_database",
+        "description": "orm_database_lesson.orm_database",
+        "peekOfCode": "Base = declarative_base()\n# Format with which SqlAlchemy connects with a database\n#SQLALCHEMY_DATABASE_URL = 'postgresql://<username>:<password>@<ip-address/hostname>/<database_name>'\nSQLALCHEMY_DATABASE_URL = 'postgresql://postgres:GENIUSCODES07@localhost/fastapi app database'\ndatabase_engine = create_engine(SQLALCHEMY_DATABASE_URL)\nSessionLocal = sessionmaker(autocommit= False,autoflush=False ,bind=database_engine)\n# Create a Database Session\ndef get_database():\n    db_conn = SessionLocal()\n    try:",
+        "detail": "orm_database_lesson.orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "#SQLALCHEMY_DATABASE_URL",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_database",
+        "description": "orm_database_lesson.orm_database",
+        "peekOfCode": "#SQLALCHEMY_DATABASE_URL = 'postgresql://<username>:<password>@<ip-address/hostname>/<database_name>'\nSQLALCHEMY_DATABASE_URL = 'postgresql://postgres:GENIUSCODES07@localhost/fastapi app database'\ndatabase_engine = create_engine(SQLALCHEMY_DATABASE_URL)\nSessionLocal = sessionmaker(autocommit= False,autoflush=False ,bind=database_engine)\n# Create a Database Session\ndef get_database():\n    db_conn = SessionLocal()\n    try:\n        yield db_conn\n    finally:",
+        "detail": "orm_database_lesson.orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "SQLALCHEMY_DATABASE_URL",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_database",
+        "description": "orm_database_lesson.orm_database",
+        "peekOfCode": "SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:GENIUSCODES07@localhost/fastapi app database'\ndatabase_engine = create_engine(SQLALCHEMY_DATABASE_URL)\nSessionLocal = sessionmaker(autocommit= False,autoflush=False ,bind=database_engine)\n# Create a Database Session\ndef get_database():\n    db_conn = SessionLocal()\n    try:\n        yield db_conn\n    finally:\n        db_conn.close()",
+        "detail": "orm_database_lesson.orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "database_engine",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_database",
+        "description": "orm_database_lesson.orm_database",
+        "peekOfCode": "database_engine = create_engine(SQLALCHEMY_DATABASE_URL)\nSessionLocal = sessionmaker(autocommit= False,autoflush=False ,bind=database_engine)\n# Create a Database Session\ndef get_database():\n    db_conn = SessionLocal()\n    try:\n        yield db_conn\n    finally:\n        db_conn.close()",
+        "detail": "orm_database_lesson.orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_database",
+        "description": "orm_database_lesson.orm_database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit= False,autoflush=False ,bind=database_engine)\n# Create a Database Session\ndef get_database():\n    db_conn = SessionLocal()\n    try:\n        yield db_conn\n    finally:\n        db_conn.close()",
+        "detail": "orm_database_lesson.orm_database",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_main",
+        "description": "orm_database_lesson.orm_main",
+        "peekOfCode": "app = FastAPI(\n    docs_url=\"/docs\",\n    redoc_url=\"/redoc\",\n)\ntry:\n    # create connection to database\n    connection= psycopg2.connect(host=\"localhost\", database=\"fastapi app database\", user= \"postgres\",\n                                password=\"GENIUSCODES07\")\n    conn_cursor = connection.cursor()\n    print(\"Connected to database\")",
+        "detail": "orm_database_lesson.orm_main",
+        "documentation": {}
+    },
+    {
+        "label": "Personal_Data",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_models",
+        "description": "orm_database_lesson.orm_models",
+        "peekOfCode": "class Personal_Data(Base):\n    __tablename__ = \"personal_data\"\n    id = Column(Integer, primary_key=True, nullable=False)\n    surname = Column(String, nullable=False)\n    firstname= Column(String, nullable=False)\n    other_names = Column(String, nullable=False, server_default='')\n    username = Column(String(length=15), nullable=False, unique=True)\n    email = Column(String, nullable=False, unique=True)\n    is_adult= Column(Boolean, nullable=False, server_default='0')\n    created_at= Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))",
+        "detail": "orm_database_lesson.orm_models",
+        "documentation": {}
+    },
+    {
+        "label": "User_Reg_Data",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_models",
+        "description": "orm_database_lesson.orm_models",
+        "peekOfCode": "class User_Reg_Data(Base):\n    __tablename__ = \"user_reg_data\"\n    id = Column(Integer, primary_key=True, nullable=False)\n    username = Column(String(15), nullable=False, unique=True)\n    email = Column(String, nullable=False, unique=True)\n    password = Column(String, nullable=False )\n    created_at= Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))\n    confirmed_password = Column(String, nullable=False)\nclass User_Posts(Base):\n    __tablename__ = \"user_posts\"",
+        "detail": "orm_database_lesson.orm_models",
+        "documentation": {}
+    },
+    {
+        "label": "User_Posts",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_models",
+        "description": "orm_database_lesson.orm_models",
+        "peekOfCode": "class User_Posts(Base):\n    __tablename__ = \"user_posts\"\n    id = Column(Integer, primary_key=True, nullable=False)\n    postUserId = Column(Integer, ForeignKey(\"user_reg_data.id\", ondelete=\"CASCADE\"), nullable=False,  )\n    username = Column(String(25), nullable=False)\n    email = Column(String, nullable=False)\n    postTitle = Column(String, nullable=False)\n    postContent = Column(String, nullable=False, unique=True)\n    createdAt= Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))\n    lastUpdatedAt= Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))",
+        "detail": "orm_database_lesson.orm_models",
+        "documentation": {}
+    },
+    {
+        "label": "create_token",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_oauth2",
+        "description": "orm_database_lesson.orm_oauth2",
+        "peekOfCode": "def create_token(data: dict):\n    encoded_data = data.copy()\n    expiry_time= datetime.now().astimezone() + timedelta(minutes=EXPIRES_IN_MINUTES)\n    #encoded_data[\"exp\"] = expiry_time\n    encoded_data.update({\"exp\": expiry_time})\n    encoded_jwt = jwt.encode(encoded_data, SECRET_KEY, ALGORITHM)\n    return encoded_jwt\ndef verify_token(token: str, credentials_exception):\n    try:\n        payload = jwt.decode(token, SECRET_KEY, algorithms=ALGORITHM)",
+        "detail": "orm_database_lesson.orm_oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "verify_token",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_oauth2",
+        "description": "orm_database_lesson.orm_oauth2",
+        "peekOfCode": "def verify_token(token: str, credentials_exception):\n    try:\n        payload = jwt.decode(token, SECRET_KEY, algorithms=ALGORITHM)\n        my_id:str = payload.get(\"user_id\")\n        if my_id is None:\n            raise credentials_exception\n        token_data = orm_schemas.TokenResponse(access_token=token, token_type=\"bearer\")\n    except JWTError:\n        raise credentials_exception\n    return token_data",
+        "detail": "orm_database_lesson.orm_oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_oauth2",
+        "description": "orm_database_lesson.orm_oauth2",
+        "peekOfCode": "def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(orm_database.get_database)):\n    credentials_exception = HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,\n                                          detail=\"Could not validate credentials\",\n                                          headers={\"WWW-Authenticate\": \"Bearer\"})\n    token = verify_token(token, credentials_exception)\n    user=db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.id == token.id_).first()\n    return user",
+        "detail": "orm_database_lesson.orm_oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "oauth2_scheme",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_oauth2",
+        "description": "orm_database_lesson.orm_oauth2",
+        "peekOfCode": "oauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/login\")\n# When creating our token, we need three things\n#-> Secret Key\n#-> Algorithm= HS256\n#-> Expiration Time\n# 7: 39: 21\nSECRET_KEY = \"1a2b3c4d5e6f7g8h9i10j11k12l13m14n15o16p17q18r19s20t21u22v23w24x25y26z1a2b3c4d5e6f7g8h9i10j11k12l13m14n15o16p17q18r19s20t21u22v23w24x25y26z\"\nALGORITHM = \"HS256\"\nEXPIRES_IN_MINUTES = 60\ndef create_token(data: dict):",
+        "detail": "orm_database_lesson.orm_oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_oauth2",
+        "description": "orm_database_lesson.orm_oauth2",
+        "peekOfCode": "SECRET_KEY = \"1a2b3c4d5e6f7g8h9i10j11k12l13m14n15o16p17q18r19s20t21u22v23w24x25y26z1a2b3c4d5e6f7g8h9i10j11k12l13m14n15o16p17q18r19s20t21u22v23w24x25y26z\"\nALGORITHM = \"HS256\"\nEXPIRES_IN_MINUTES = 60\ndef create_token(data: dict):\n    encoded_data = data.copy()\n    expiry_time= datetime.now().astimezone() + timedelta(minutes=EXPIRES_IN_MINUTES)\n    #encoded_data[\"exp\"] = expiry_time\n    encoded_data.update({\"exp\": expiry_time})\n    encoded_jwt = jwt.encode(encoded_data, SECRET_KEY, ALGORITHM)\n    return encoded_jwt",
+        "detail": "orm_database_lesson.orm_oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "ALGORITHM",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_oauth2",
+        "description": "orm_database_lesson.orm_oauth2",
+        "peekOfCode": "ALGORITHM = \"HS256\"\nEXPIRES_IN_MINUTES = 60\ndef create_token(data: dict):\n    encoded_data = data.copy()\n    expiry_time= datetime.now().astimezone() + timedelta(minutes=EXPIRES_IN_MINUTES)\n    #encoded_data[\"exp\"] = expiry_time\n    encoded_data.update({\"exp\": expiry_time})\n    encoded_jwt = jwt.encode(encoded_data, SECRET_KEY, ALGORITHM)\n    return encoded_jwt\ndef verify_token(token: str, credentials_exception):",
+        "detail": "orm_database_lesson.orm_oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "EXPIRES_IN_MINUTES",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_oauth2",
+        "description": "orm_database_lesson.orm_oauth2",
+        "peekOfCode": "EXPIRES_IN_MINUTES = 60\ndef create_token(data: dict):\n    encoded_data = data.copy()\n    expiry_time= datetime.now().astimezone() + timedelta(minutes=EXPIRES_IN_MINUTES)\n    #encoded_data[\"exp\"] = expiry_time\n    encoded_data.update({\"exp\": expiry_time})\n    encoded_jwt = jwt.encode(encoded_data, SECRET_KEY, ALGORITHM)\n    return encoded_jwt\ndef verify_token(token: str, credentials_exception):\n    try:",
+        "detail": "orm_database_lesson.orm_oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "create_post",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_posts",
+        "description": "orm_database_lesson.orm_posts",
+        "peekOfCode": "def create_post(pd: orm_schemas.CreatePost, db: Session = Depends(orm_database.get_database), current_user: int=Depends(orm_oauth2.get_current_user)):\n    try:\n        # Search by Email\n        user_by_email = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.email == pd.email).first()\n        # Search by Username\n        user_by_username = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.username == pd.username).first()\n        # if invalid, raise exception\n        if user_by_email is None:\n            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,\n                                detail=\"You may need to login first\")",
+        "detail": "orm_database_lesson.orm_posts",
+        "documentation": {}
+    },
+    {
+        "label": "get_post_info",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_posts",
+        "description": "orm_database_lesson.orm_posts",
+        "peekOfCode": "def get_post_info(post_title: str, db: Session = Depends(orm_database.get_database), current_user: int=Depends(orm_oauth2.get_current_user)):\n    info_post = db.query(orm_models.User_Posts).filter(orm_models.User_Posts.postTitle == post_title).first()\n    if not info_post:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,\n                            detail=\"Post not found\")\n    return info_post\n@router.delete(\"/{post_title}\", status_code=status.HTTP_204_NO_CONTENT)\ndef delete_post(post_title: str, db: Session = Depends(orm_database.get_database), current_user: int=Depends(orm_oauth2.get_current_user)):\n    post_delete = db.query(orm_models.User_Posts).filter(orm_models.User_Posts.postTitle == post_title)\n    if not post_delete:",
+        "detail": "orm_database_lesson.orm_posts",
+        "documentation": {}
+    },
+    {
+        "label": "delete_post",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_posts",
+        "description": "orm_database_lesson.orm_posts",
+        "peekOfCode": "def delete_post(post_title: str, db: Session = Depends(orm_database.get_database), current_user: int=Depends(orm_oauth2.get_current_user)):\n    post_delete = db.query(orm_models.User_Posts).filter(orm_models.User_Posts.postTitle == post_title)\n    if not post_delete:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,\n                            detail=\"Post Not Found\")\n    post_delete.delete(synchronize_session=False)\n    db.commit()\n@router.put(\"/{post_title}\", status_code=status.HTTP_202_ACCEPTED, response_model=orm_schemas.UpdatePost)\nasync def update_post(pd: orm_schemas.UpdatePost, post_title: str ,db: Session = Depends(orm_database.get_database), current_user: int=Depends(orm_oauth2.get_current_user)):\n    try:",
+        "detail": "orm_database_lesson.orm_posts",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_posts",
+        "description": "orm_database_lesson.orm_posts",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/posts\",\n    tags=['Posts'],\n)\n@router.post(\"/create\" , status_code=status.HTTP_201_CREATED ,)# response_model=orm_schemas.CreatePost, )\ndef create_post(pd: orm_schemas.CreatePost, db: Session = Depends(orm_database.get_database), current_user: int=Depends(orm_oauth2.get_current_user)):\n    try:\n        # Search by Email\n        user_by_email = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.email == pd.email).first()\n        # Search by Username",
+        "detail": "orm_database_lesson.orm_posts",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_user_reg_data_info",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_production",
+        "description": "orm_database_lesson.orm_production",
+        "peekOfCode": "def get_all_user_reg_data_info(db: Session = Depends(get_database)):\n    user_reg_data = db.query(orm_models.User_Reg_Data).order_by(orm_models.User_Reg_Data.id).all()\n    return user_reg_data\n@router.get(\"/personal data\", status_code=status.HTTP_200_OK, response_model=List[orm_schemas.UserPersonalData])\ndef get_all_personal_data_info(db: Session = Depends(get_database)):\n    personal_data =db.query(orm_models.Personal_Data).order_by(orm_models.Personal_Data.id).all()\n    return personal_data\n# Moved\n@router.get(\"/user posts\", status_code=status.HTTP_200_OK, response_model=List[orm_schemas.UserPosts])\ndef get_all_user_posts_info(db: Session = Depends(get_database)):",
+        "detail": "orm_database_lesson.orm_production",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_personal_data_info",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_production",
+        "description": "orm_database_lesson.orm_production",
+        "peekOfCode": "def get_all_personal_data_info(db: Session = Depends(get_database)):\n    personal_data =db.query(orm_models.Personal_Data).order_by(orm_models.Personal_Data.id).all()\n    return personal_data\n# Moved\n@router.get(\"/user posts\", status_code=status.HTTP_200_OK, response_model=List[orm_schemas.UserPosts])\ndef get_all_user_posts_info(db: Session = Depends(get_database)):\n    user_posts = db.query(orm_models.User_Posts).order_by(orm_models.User_Posts.id).all()\n    return user_posts\n# Delete by ID\n@router.delete(\"/{username_or_email}/{post_title}/{id_}\", status_code=status.HTTP_204_NO_CONTENT)",
+        "detail": "orm_database_lesson.orm_production",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_user_posts_info",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_production",
+        "description": "orm_database_lesson.orm_production",
+        "peekOfCode": "def get_all_user_posts_info(db: Session = Depends(get_database)):\n    user_posts = db.query(orm_models.User_Posts).order_by(orm_models.User_Posts.id).all()\n    return user_posts\n# Delete by ID\n@router.delete(\"/{username_or_email}/{post_title}/{id_}\", status_code=status.HTTP_204_NO_CONTENT)\ndef delete_post(username_or_email: str|EmailStr, id_: int,post_title: str, db: Session = Depends(get_database)):\n    # Search for Post Title\n    get_post_title = db.query(orm_models.User_Posts).filter(orm_models.User_Posts.post_title == post_title).all()\n    work_with = \"\"\n    # Locate the record with given email or username and post_title",
+        "detail": "orm_database_lesson.orm_production",
+        "documentation": {}
+    },
+    {
+        "label": "delete_post",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_production",
+        "description": "orm_database_lesson.orm_production",
+        "peekOfCode": "def delete_post(username_or_email: str|EmailStr, id_: int,post_title: str, db: Session = Depends(get_database)):\n    # Search for Post Title\n    get_post_title = db.query(orm_models.User_Posts).filter(orm_models.User_Posts.post_title == post_title).all()\n    work_with = \"\"\n    # Locate the record with given email or username and post_title\n    for x in get_post_title:\n        if x.email == username_or_email and x.post_title == post_title and x.id == id_:\n            print(\"The Email matched  \",x.email, x.username, x.postTitle, x.id)\n            work_with = x\n        if x.username == username_or_email and x.post_title == post_title and x.id == id_:",
+        "detail": "orm_database_lesson.orm_production",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_production",
+        "description": "orm_database_lesson.orm_production",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/prod\",\n    tags=['Production']\n)\n# Moved\n@router.get(\"/user reg data\", status_code=status.HTTP_200_OK, response_model=List[orm_schemas.UserRegData])\ndef get_all_user_reg_data_info(db: Session = Depends(get_database)):\n    user_reg_data = db.query(orm_models.User_Reg_Data).order_by(orm_models.User_Reg_Data.id).all()\n    return user_reg_data\n@router.get(\"/personal data\", status_code=status.HTTP_200_OK, response_model=List[orm_schemas.UserPersonalData])",
+        "detail": "orm_database_lesson.orm_production",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 2,
+            "peekOfCode": "def  our_welcome_page():\n    return {\"Hello\": \"World\"}"
+        },
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_root",
+        "description": "orm_database_lesson.orm_root",
+        "peekOfCode": "def  our_welcome_page():\n    return {\"Hello\": \"World\"}",
+        "detail": "orm_database_lesson.orm_root",
+        "documentation": {}
+    },
+    {
+        "label": "my_router",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_root",
+        "description": "orm_database_lesson.orm_root",
+        "peekOfCode": "my_router = APIRouter(tags=['Root Page'])\n@my_router.get(\"/\")\ndef  our_welcome_page():\n    return {\"Hello\": \"World\"}",
+        "detail": "orm_database_lesson.orm_root",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegData",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_schemas",
+        "description": "orm_database_lesson.orm_schemas",
+        "peekOfCode": "class UserRegData(BaseModel):\n    id : Optional[int] = None\n    username : str\n    email : EmailStr\n    password :str\n    created_at : datetime.datetime = datetime.datetime.now()\n    confirmed_password : str = \"\"\n    class Config:\n        #orm_mode = True\n        from_attributes = True",
+        "detail": "orm_database_lesson.orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UserPersonalData",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_schemas",
+        "description": "orm_database_lesson.orm_schemas",
+        "peekOfCode": "class UserPersonalData(BaseModel):\n    id: Optional[int] = None\n    username: str\n    email: EmailStr\n    created_at: datetime.datetime = datetime.datetime.now()\n    surname: str\n    firstname: str\n    other_names: str = \"\"\n    is_adult: bool\n    confirmed_password: str",
+        "detail": "orm_database_lesson.orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UserPosts",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_schemas",
+        "description": "orm_database_lesson.orm_schemas",
+        "peekOfCode": "class UserPosts(BaseModel):\n    id : Optional[int] = None\n    postUserId: int\n    username : str\n    email : EmailStr\n    postTitle : str\n    postContent : str\n    class Config:\n        #orm_mode = True\n        from_attributes = True",
+        "detail": "orm_database_lesson.orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UpdatePost",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_schemas",
+        "description": "orm_database_lesson.orm_schemas",
+        "peekOfCode": "class UpdatePost(BaseModel):\n    username: str\n    email: EmailStr\n    postContent: str\n    lastUpdatedAt: datetime.datetime = datetime.datetime.now()\n    class Config:\n        #orm_mode = True\n        from_attributes = True\n# Schema for displaying user's registration data from database\nclass UserAccount(BaseModel):",
+        "detail": "orm_database_lesson.orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UserAccount",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_schemas",
+        "description": "orm_database_lesson.orm_schemas",
+        "peekOfCode": "class UserAccount(BaseModel):\n    fullname: str\n    username: str\n    is_adult: bool\n    email: EmailStr\n    class Config:\n        # orm_mode = True\n        from_attributes = True\n# Schema for displaying user's post data from and collecting user's post data to, database\nclass CreatePost(BaseModel):",
+        "detail": "orm_database_lesson.orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CreatePost",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_schemas",
+        "description": "orm_database_lesson.orm_schemas",
+        "peekOfCode": "class CreatePost(BaseModel):\n    username: str\n    email: EmailStr\n    postTitle: str\n    postContent: str\n    postUserId: int=0\n    createdAt: datetime.datetime = datetime.datetime.now()\n    class Config:\n        #orm_mode = True\n        from_attributes = True",
+        "detail": "orm_database_lesson.orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "LoginResponse",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_schemas",
+        "description": "orm_database_lesson.orm_schemas",
+        "peekOfCode": "class LoginResponse(BaseModel):\n    email: EmailStr\n    status: str=\"Login Successful\"\nclass Token(BaseModel):\n    access_token: str\n    token_type: str =\"bearer\"\nclass TokenResponse(Token):\n    id_: Optional[str] = None",
+        "detail": "orm_database_lesson.orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_schemas",
+        "description": "orm_database_lesson.orm_schemas",
+        "peekOfCode": "class Token(BaseModel):\n    access_token: str\n    token_type: str =\"bearer\"\nclass TokenResponse(Token):\n    id_: Optional[str] = None",
+        "detail": "orm_database_lesson.orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TokenResponse",
+        "kind": 6,
+        "importPath": "orm_database_lesson.orm_schemas",
+        "description": "orm_database_lesson.orm_schemas",
+        "peekOfCode": "class TokenResponse(Token):\n    id_: Optional[str] = None",
+        "detail": "orm_database_lesson.orm_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_users",
+        "description": "orm_database_lesson.orm_users",
+        "peekOfCode": "def create_user(user_data: orm_schemas.UserRegData,db:Session=Depends(get_database)):\n    try:\n        # Set the value of the user_data.confirmed_password as a plain password\n        user_data.confirmed_password = user_data.password\n        # Set the value of the user_data.password as a hash\n        user_data.password = orm_utils.hash_password(user_data.password)\n        # Fill up the User_Reg_Data Columns\n        new_user_reg_data = orm_models.User_Reg_Data(**user_data.model_dump())\n        # Save User_Reg_Data to Database\n        db.add(new_user_reg_data)",
+        "detail": "orm_database_lesson.orm_users",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_by_username",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_users",
+        "description": "orm_database_lesson.orm_users",
+        "peekOfCode": "def get_user_by_username(username: str,db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2.get_current_user)):\n    user_info = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.username == username).first()\n    if not user_info:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,\n                            detail=\"User Not Found\")\n    return user_info\n@router.get(\"/email/{user_email}\", status_code=status.HTTP_302_FOUND, response_model=orm_schemas.UserAccount)\ndef get_user_by_email(user_email: EmailStr,db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2.get_current_user)):\n    user_info = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.email == user_email).first()\n    if not user_info:",
+        "detail": "orm_database_lesson.orm_users",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_by_email",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_users",
+        "description": "orm_database_lesson.orm_users",
+        "peekOfCode": "def get_user_by_email(user_email: EmailStr,db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2.get_current_user)):\n    user_info = db.query(orm_models.User_Reg_Data).filter(orm_models.User_Reg_Data.email == user_email).first()\n    if not user_info:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,\n                            detail=\"Email Not Found\")\n    return user_info",
+        "detail": "orm_database_lesson.orm_users",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "orm_database_lesson.orm_users",
+        "description": "orm_database_lesson.orm_users",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/users\",\n    tags=['Users']\n)\n#response_model=orm_schemas.User_Response,\n@router.post(\"/create\", status_code=status.HTTP_201_CREATED )\ndef create_user(user_data: orm_schemas.UserRegData,db:Session=Depends(get_database)):\n    try:\n        # Set the value of the user_data.confirmed_password as a plain password\n        user_data.confirmed_password = user_data.password",
+        "detail": "orm_database_lesson.orm_users",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_utils",
+        "description": "orm_database_lesson.orm_utils",
+        "peekOfCode": "def hash_password(password:str):\n    password= pwd.hash(password)\n    return password\ndef check_password(plain_password: str, hashed_password):\n    result = pwd.verify(plain_password, hashed_password)\n    return result",
+        "detail": "orm_database_lesson.orm_utils",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "kind": 2,
+        "importPath": "orm_database_lesson.orm_utils",
+        "description": "orm_database_lesson.orm_utils",
+        "peekOfCode": "def check_password(plain_password: str, hashed_password):\n    result = pwd.verify(plain_password, hashed_password)\n    return result",
+        "detail": "orm_database_lesson.orm_utils",
+        "documentation": {}
+    },
+    {
+        "label": "sort_out_content",
+        "kind": 2,
+        "importPath": "orm_database_lesson.useful_functions",
+        "description": "orm_database_lesson.useful_functions",
+        "peekOfCode": "def sort_out_content(item_to_sort: dict|list)-> list:\n    print(item_to_sort)",
+        "detail": "orm_database_lesson.useful_functions",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 2,
+        "importPath": "pydantic_schemas.main",
+        "description": "pydantic_schemas.main",
+        "peekOfCode": "def root():\n    return \"We are beginning to work with dictionaries\"\n@app.get(\"/postman\")\ndef page1():\n    return \"\"\"We are beginning to work with dictionaries\n    This works on PostMan\"\"\"\n@app.post(\"/posts\")\ndef create_post(my_post: Example):\n    # Extract the value of 'id' in my_post [which is stored as an object of the Student_Info class] and assign it a value\n    my_post.id = len(var_dict) +1",
+        "detail": "pydantic_schemas.main",
+        "documentation": {}
+    },
+    {
+        "label": "page1",
+        "kind": 2,
+        "importPath": "pydantic_schemas.main",
+        "description": "pydantic_schemas.main",
+        "peekOfCode": "def page1():\n    return \"\"\"We are beginning to work with dictionaries\n    This works on PostMan\"\"\"\n@app.post(\"/posts\")\ndef create_post(my_post: Example):\n    # Extract the value of 'id' in my_post [which is stored as an object of the Student_Info class] and assign it a value\n    my_post.id = len(var_dict) +1\n    var_dict.append(my_post.model_dump())\n    full_info= f\"{my_post.message}; {my_post.status}; {my_post.id}\"\n    return full_info",
+        "detail": "pydantic_schemas.main",
+        "documentation": {}
+    },
+    {
+        "label": "create_post",
+        "kind": 2,
+        "importPath": "pydantic_schemas.main",
+        "description": "pydantic_schemas.main",
+        "peekOfCode": "def create_post(my_post: Example):\n    # Extract the value of 'id' in my_post [which is stored as an object of the Student_Info class] and assign it a value\n    my_post.id = len(var_dict) +1\n    var_dict.append(my_post.model_dump())\n    full_info= f\"{my_post.message}; {my_post.status}; {my_post.id}\"\n    return full_info\n@app.get(\"/posts\")\ndef get_posts():\n    return var_dict\n@app.get(\"/posts/{id_}\")",
+        "detail": "pydantic_schemas.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_posts",
+        "kind": 2,
+        "importPath": "pydantic_schemas.main",
+        "description": "pydantic_schemas.main",
+        "peekOfCode": "def get_posts():\n    return var_dict\n@app.get(\"/posts/{id_}\")\ndef get_post(id_: int):\n    for x in range(len(var_dict)):\n        if var_dict[x]['id'] == id_:\n            return var_dict[x]\n    return None\n@app.get(\"/check\")\ndef check():",
+        "detail": "pydantic_schemas.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_post",
+        "kind": 2,
+        "importPath": "pydantic_schemas.main",
+        "description": "pydantic_schemas.main",
+        "peekOfCode": "def get_post(id_: int):\n    for x in range(len(var_dict)):\n        if var_dict[x]['id'] == id_:\n            return var_dict[x]\n    return None\n@app.get(\"/check\")\ndef check():\n    m = ()\n    for x in range(len(var_dict)):\n        m += (x+1,)",
+        "detail": "pydantic_schemas.main",
+        "documentation": {}
+    },
+    {
+        "label": "check",
+        "kind": 2,
+        "importPath": "pydantic_schemas.main",
+        "description": "pydantic_schemas.main",
+        "peekOfCode": "def check():\n    m = ()\n    for x in range(len(var_dict)):\n        m += (x+1,)\n    for x in m:\n        if var_dict[x-1]['id'] in m:\n            pass\n            #print(var_dict[x-1]['id'])\n        else:\n            print(f\"{x} Not Here\")",
+        "detail": "pydantic_schemas.main",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "kind": 2,
+        "importPath": "pydantic_schemas.main",
+        "description": "pydantic_schemas.main",
+        "peekOfCode": "def delete(id_: int):\n    print(f\"check() is {check()}\")\n    for x in check():\n        print(f\"for {x}: {var_dict[x - 1]}\")\n        print(f\"then {var_dict[x-1]['id']}\")\n        if var_dict[x-1]['id'] == id_:\n            wanted = var_dict[id_-1]\n            print(wanted)\n            var_dict.remove(wanted)\n            #print(\"done here\")",
+        "detail": "pydantic_schemas.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "pydantic_schemas.main",
+        "description": "pydantic_schemas.main",
+        "peekOfCode": "app = FastAPI()\nvar_dict = \\\n    [\n    {'message': \"Post 1 Retrieved\",\n     'status': \"Successful\",\n     'id': 1},\n    {'message': \"Post 2 Retrieved\",\n         'status': \"Successful\",\n     'id': 2},\n    {'message': \"Post 3 Retrieved\",",
+        "detail": "pydantic_schemas.main",
+        "documentation": {}
+    },
+    {
+        "label": "var_dict",
+        "kind": 5,
+        "importPath": "pydantic_schemas.main",
+        "description": "pydantic_schemas.main",
+        "peekOfCode": "var_dict = \\\n    [\n    {'message': \"Post 1 Retrieved\",\n     'status': \"Successful\",\n     'id': 1},\n    {'message': \"Post 2 Retrieved\",\n         'status': \"Successful\",\n     'id': 2},\n    {'message': \"Post 3 Retrieved\",\n         'status': \"Successful\",",
+        "detail": "pydantic_schemas.main",
+        "documentation": {}
+    },
+    {
+        "label": "Student_Info",
+        "kind": 6,
+        "importPath": "pydantic_schemas.my_pydantic_models",
+        "description": "pydantic_schemas.my_pydantic_models",
+        "peekOfCode": "class Student_Info(BaseModel):\n    serial_number: int\n    surname: str\n    first_name: str\n    other_names: str=\"\"\n    class_: str\n    age: str\n    residential_address: str\nclass Example(BaseModel):\n    message: str",
+        "detail": "pydantic_schemas.my_pydantic_models",
+        "documentation": {}
+    },
+    {
+        "label": "Example",
+        "kind": 6,
+        "importPath": "pydantic_schemas.my_pydantic_models",
+        "description": "pydantic_schemas.my_pydantic_models",
+        "peekOfCode": "class Example(BaseModel):\n    message: str\n    status: str\n    id: int\n    user: str = None",
+        "detail": "pydantic_schemas.my_pydantic_models",
+        "documentation": {}
+    },
+    {
+        "label": "check_serial",
+        "kind": 2,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "def check_serial(id_: int):\n    count = 0\n    try:\n        while count < len(var_dict):\n            if var_dict[count]['serial_number'] == id_:\n                break\n            count += 1\n        return var_dict[count]\n    except IndexError:\n        return None",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "check_name",
+        "kind": 2,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "def check_name(name: str)-> dict | None:\n    count = 0\n    result = ()\n    try:\n        while count < len(var_dict):\n            if var_dict[count]['surname'] == name or var_dict[count]['first_name'] == name or var_dict[count]['other_names'] == name:\n                result += var_dict[count],\n            count += 1\n        return result\n    except IndexError:",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "create_post",
+        "kind": 2,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "def create_post(my_post: Student_Info):\n    my_post.serial_number = len(var_dict) +1\n    var_dict.append(my_post.model_dump())\n    full_Name= f\"{my_post.surname} {my_post.first_name} {my_post.other_names}\"\n    raise HTTPException(status_code=status.HTTP_201_CREATED, detail=full_Name)\n@app.get(\"/all students' info\")\ndef get_posts():\n    return var_dict\n# Here we set it to a status code '404', BY\n@app.get(\"/student id/{id_}\")",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_posts",
+        "kind": 2,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "def get_posts():\n    return var_dict\n# Here we set it to a status code '404', BY\n@app.get(\"/student id/{id_}\")\ndef get_student_id(id_: int, my_response: Response):\n    result = check_serial(id_)\n    if not result:\n        my_response.status_code = status.HTTP_404_NOT_FOUND\n        return \"This Student does not exist\"\n    return result",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_student_id",
+        "kind": 2,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "def get_student_id(id_: int, my_response: Response):\n    result = check_serial(id_)\n    if not result:\n        my_response.status_code = status.HTTP_404_NOT_FOUND\n        return \"This Student does not exist\"\n    return result\n#  OR\n@app.get(\"/student name/{name}\")\ndef get_student_name(name: str):\n    result = check_name(name)",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_student_name",
+        "kind": 2,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "def get_student_name(name: str):\n    result = check_name(name)\n    if not result:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f\"No Student as {name}\")\n    return result\n@app.delete(\"/delete student info/{id_}\", status_code=204)\ndef delete(id_: int):\n    print(type(check_serial(id_)))\n    if not check_serial(id_):\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Student does not exist\")",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "kind": 2,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "def delete(id_: int):\n    print(type(check_serial(id_)))\n    if not check_serial(id_):\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Student does not exist\")\n    var_dict.remove(check_serial(id_))\n    return Response(status_code=status.HTTP_204_NO_CONTENT)\n@app.patch(\"/update student info/{id_}\")\ndef update(id_: int, my_post: Student_Info):\n    result = check_serial(id_)\n    if not result:",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "update",
+        "kind": 2,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "def update(id_: int, my_post: Student_Info):\n    result = check_serial(id_)\n    if not result:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Student does not exist\")\n    # First convert the Student_Info class instance, 'my_post' into a proper dictionary\n    my_update = my_post.model_dump()\n    result['serial_number'] = id_\n    result['surname'] = my_update['surname']\n    result['first_name'] = my_update['first_name']\n    result['other_names'] = my_update['other_names']",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "app = FastAPI()\nvar_dict = \\\n    [\n    {'serial_number': 1,\n         'surname': \"Ugwuagu\",\n         'first_name': \"Collins\",\n        'other_names': \"\",\n         'age': 10,\n         'residential_address': \"Home\"},\n    {'serial_number': 2,",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "var_dict",
+        "kind": 5,
+        "importPath": "status_codes.main",
+        "description": "status_codes.main",
+        "peekOfCode": "var_dict = \\\n    [\n    {'serial_number': 1,\n         'surname': \"Ugwuagu\",\n         'first_name': \"Collins\",\n        'other_names': \"\",\n         'age': 10,\n         'residential_address': \"Home\"},\n    {'serial_number': 2,\n         'surname': \"Ngwu\",",
+        "detail": "status_codes.main",
+        "documentation": {}
+    },
+    {
+        "label": "Student_Info",
+        "kind": 6,
+        "importPath": "status_codes.status_pydantic_models",
+        "description": "status_codes.status_pydantic_models",
+        "peekOfCode": "class Student_Info(BaseModel):\n    serial_number: Optional[int] = 0\n    surname: str\n    first_name: str\n    other_names: str=\"\"\n    class_: Optional[str]= ''\n    age: int\n    residential_address: Optional[str]= \"Home\"\nclass Update_Student_Info(BaseModel):\n    surname: str",
+        "detail": "status_codes.status_pydantic_models",
+        "documentation": {}
+    },
+    {
+        "label": "Update_Student_Info",
+        "kind": 6,
+        "importPath": "status_codes.status_pydantic_models",
+        "description": "status_codes.status_pydantic_models",
+        "peekOfCode": "class Update_Student_Info(BaseModel):\n    surname: str\nclass Example(BaseModel):\n    message: str\n    status: str\n    id: int\n    user: str = None",
+        "detail": "status_codes.status_pydantic_models",
+        "documentation": {}
+    },
+    {
+        "label": "Example",
+        "kind": 6,
+        "importPath": "status_codes.status_pydantic_models",
+        "description": "status_codes.status_pydantic_models",
+        "peekOfCode": "class Example(BaseModel):\n    message: str\n    status: str\n    id: int\n    user: str = None",
+        "detail": "status_codes.status_pydantic_models",
         "documentation": {}
     },
     {

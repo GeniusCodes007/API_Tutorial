@@ -3,7 +3,7 @@ Here, we are going to be using the Pydantic schema features to extract informati
 """
 
 from fastapi import FastAPI
-from my_pydantic_models import Example
+from pydantic_schemas.my_pydantic_models import Example
 
 app = FastAPI()
 
