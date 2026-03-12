@@ -32,13 +32,12 @@ def create_token(data: dict):
 def verify_token(token: str, credentials_exception):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=ALGORITHM)
-        #print(f"payload is {payload.get("user_id")}")
 
-        my_id:str = payload.get("user_id")
+        my_id = payload.get("user_id")
         if my_id is None:
             raise credentials_exception
 
-        token_data = orm_schemas_2.TokenResponse(access_token=token, token_type="bearer", id_=str(my_id))
+        token_data = orm_schemas_2.TokenResponse(access_token=token, token_type="bearer", token_id=str(my_id))
     except JWTError:
         raise credentials_exception
     return token_data
@@ -50,7 +49,8 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
                                           headers={"WWW-Authenticate": "Bearer"})
     token = verify_token(token, credentials_exception)
 
-    user=db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.id == token.id_).first()
+    user=db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.id == token.token_id).first()
+
 
     return user
 

@@ -2,13 +2,13 @@
 from fastapi import APIRouter, HTTPException, status, Depends
 from fastapi.security.oauth2 import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
-import orm_models_2, orm_utils_2, orm_oauth2_2
+import orm_models_2, orm_utils_2, orm_oauth2_2, orm_schemas_2
 from orm_database_2 import get_database
 
 router = APIRouter(tags=['Authentication'],)
 
 
-@router.post("/login", )#response_model=orm_schemas.Token)
+@router.post("/login", response_model=orm_schemas_2.Token)
 def login_user(user_credential: OAuth2PasswordRequestForm= Depends(),db: Session= Depends(get_database)):
 
     # Check the database for the email passed
@@ -31,12 +31,10 @@ def login_user(user_credential: OAuth2PasswordRequestForm= Depends(),db: Session
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
                             detail="Access Denied")
 
-
-
     # Create a token
     my_user_token = orm_oauth2_2.create_token(data={"access_type": "user",
                                              "user_id":work_with.id,
                                              "username": work_with.username,
                                              "email": work_with.email})
 
-    return {"access_token":my_user_token,"token_type":"bearer"},
+    return {"access_token":my_user_token,"token_type":"bearer"}

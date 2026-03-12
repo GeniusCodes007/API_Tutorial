@@ -54,3 +54,26 @@ def delete_post(username_or_email: str|EmailStr, post_title: str, db: Session = 
     db.delete(work_with)
     db.commit()
 
+@router.delete("/{username_or_email}", )#status_code=status.HTTP_200_OK, response_model=List[orm_schemas_2.UserRegData])
+def get_all_user_reg_data_info(username_or_email: str|EmailStr, db: Session = Depends(get_database)):
+
+    user_reg_data = db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.username == username_or_email)
+    user_reg_data_by_email = db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.email == username_or_email)
+
+    if user_reg_data.first():
+        user_reg_data.delete(synchronize_session=False)
+        db.commit()
+    if user_reg_data_by_email.first():
+        user_reg_data_by_email.delete(synchronize_session=False)
+        db.commit()
+    else:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                            detail=f"User {username_or_email} not found")
+
+@router.get("/post votes", status_code=status.HTTP_200_OK)
+def get_all_post_votes(db: Session = Depends(get_database)):
+    try:
+        all_votes = db.query(orm_models_2.Post_Votes).all()
+        return all_votes
+    except Exception as e:
+        return e

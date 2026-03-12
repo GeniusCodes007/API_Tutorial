@@ -9,9 +9,9 @@ Base = declarative_base()
 
 # Format with which SqlAlchemy connects with a database
 #SQLALCHEMY_DATABASE_URL = 'postgresql://<username>:<password>@<ip-address/hostname>/<database_name>'
-#SQLALCHEMY_DATABASE_URL = f'postgresql://postgres:GENIUSCODES07@localhost/fastapi app database'
+#SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:GENIUSCODES07@localhost/fastapi app database'
 
-SQLALCHEMY_DATABASE_URL = f'postgresql://{my_settings.database_username}:{my_settings.database_password}@{my_settings.database_hostname}/{my_settings.database_name}'
+SQLALCHEMY_DATABASE_URL = f'postgresql://{my_settings.database_username}:{my_settings.database_password}@{my_settings.database_hostname}:{my_settings.database_port}/{my_settings.database_name}'
 
 
 database_engine = create_engine(SQLALCHEMY_DATABASE_URL)

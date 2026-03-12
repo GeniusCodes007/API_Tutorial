@@ -15,61 +15,73 @@ router = APIRouter(
 )
 
 
-@router.post("/create" , status_code=status.HTTP_201_CREATED ,)# response_model=orm_schemas_2.CreatePost, )
-def create_post(post_schema: orm_schemas_2.CreatePost, db: Session = Depends(orm_database_2.get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
+@router.post("/create" , status_code=status.HTTP_201_CREATED , response_model=orm_schemas_2.CreatePost, )
+def create_post(post_schema: orm_schemas_2.CreatePost, db: Session = Depends(orm_database_2.get_database), current_user: int=Depends(orm_oauth2_2.get_current_user),):
     try:
+        if not current_user:
+            return "Not Authorized", current_user
+        # If the username is registered
+        if current_user.username != post_schema.username:
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
+                                detail="Are You Logged In?",)
 
-        # Search by Email
-        user_by_email = db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.email == post_schema.email).first()
-    
-        # Search by Username
-        user_by_username = db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.username == post_schema.username).first()
-    
-        # if invalid, raise exception
-        if user_by_email :
-            work_with = user_by_email
-        else:
-            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                                detail="You may need to login first")
-    
-        # if invalid, raise exception
-        if user_by_username :
-            work_with = user_by_username
-        else:
-            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                                detail="Do Not Formulate Username, If Not Signed Up")
-    
-    
-        # After User is successfully validated
-    
-        # Check if the user's newly posted postTitle already exists by the user himself
-        find_post_title = db.query(orm_models_2.User_Posts).filter(orm_models_2.User_Posts.postTitle == post_schema.postTitle).all()
-        for x in find_post_title:
-            if x.username == post_schema.username or x.email == post_schema.email:
-                raise HTTPException(status_code=status.HTTP_409_CONFLICT,
-                                    detail=f"Post With Title: {post_schema.postTitle} By You Already Exists!!!  Would You Prefer To Update This Post???")
-    
-    
-        # Set the value for the foreign key 'postUserId'
-        post_schema.postUserId = work_with.id
-    
-        # Unpack the CreatePost schema into User_Posts model
-        new_post_data = orm_models_2.User_Posts(**post_schema.model_dump())
-    
-        # Add new_post_data to the database
-        db.add(new_post_data)
-        # Commit changes to the database
+        # Also, check if the email is registered
+        if current_user.email !=post_schema.email:
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
+                                detail="Do You Own The Account?",)
+
+        # Find all posts with the post title the user wants to create
+        possible_posts=db.query(orm_models_2.User_Posts).filter(orm_models_2.User_Posts.postTitle == post_schema.postTitle).all()
+
+        # If they exist ...
+        if possible_posts:
+
+            # Find if the user has already created a post with that title
+            for single_post in possible_posts:
+                # If found, raise Exception
+                if single_post.postUserId == current_user.id:
+                    raise HTTPException(status_code=status.HTTP_409_CONFLICT,
+                                        detail="This Post Already Exists By You!!! Consider Updating This Post",)
+
+        new_post =orm_models_2.User_Posts(postUserId=current_user.id, username=post_schema.username, email=post_schema.email,
+                                          postTitle=post_schema.postTitle, postContent=post_schema.postContent)
+
+        db.add(new_post)
+        db.flush()
+
+
+        # Create Post Vote
+
+        # Set attribute-values for Post Vote
+        p_id = int(new_post.id)
+        u_id = int(new_post.postUserId)
+        v_post_title = post_schema.postTitle
+        v_author_email= post_schema.email
+        v_author_username=post_schema.username
+
+        create_vote = orm_models_2.Post_Votes( post_id=p_id, user_id=u_id, vote_postTitle=v_post_title,
+                                            vote_Author_Email=v_author_email, vote_Author_Username=v_author_username)
+
+
+        db.add(create_vote)
+        #db.flush()
         db.commit()
-        # Refresh data database to see changes made
-        db.refresh(new_post_data)
-    
-        return new_post_data
-    except sqlalchemy.exc.IntegrityError :
-        raise HTTPException(status_code=status.HTTP_409_CONFLICT,)
+
+
+        return new_post
+    except sqlalchemy.exc.IntegrityError:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT,
+                            detail=f"Why are you duplicating???")
 
 
 @router.get("/{post_title}", status_code=status.HTTP_200_OK,)# response_model=orm_schemas_2.CreatePost)
 def get_post_info(post_title: str, db: Session = Depends(orm_database_2.get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
+
+    # Check if user is registered
+    if not current_user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
+                            detail="Not Authorized", )
+
     # Check if post of post_title by user exists
     info_post = db.query(orm_models_2.User_Posts).filter(orm_models_2.User_Posts.postTitle == post_title).all()
 
@@ -83,7 +95,12 @@ def get_post_info(post_title: str, db: Session = Depends(orm_database_2.get_data
 
 @router.delete("/{post_title}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_post(post_title: str, db: Session = Depends(orm_database_2.get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
-    post_to_delete = db.query(orm_models_2.User_Posts).filter(orm_models_2.User_Posts.postTitle == post_title)
+    # Check if user is registered
+    if not current_user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
+                            detail="Not Authorized", )
+
+    post_to_delete = db.query(orm_models_2.User_Posts).filter(orm_models_2.User_Posts.postTitle == post_title and orm_models_2.User_Posts.postUserId == current_user.id).first()
 
     if not post_to_delete:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,

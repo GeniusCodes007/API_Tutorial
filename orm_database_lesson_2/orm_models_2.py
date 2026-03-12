@@ -1,6 +1,6 @@
 
 
-from sqlalchemy import Integer, String, Column, Boolean, ForeignKey
+from sqlalchemy import Integer, String, Column, Boolean, JSON
 from orm_database_2 import Base
 from sqlalchemy.sql.expression import text
 from sqlalchemy.sql.sqltypes import TIMESTAMP
@@ -34,17 +34,25 @@ class User_Posts(Base):
     __tablename__ = "user_posts"
 
     id = Column(Integer, primary_key=True, nullable=False)
-    postUserId = Column(Integer, ForeignKey("user_reg_data.id", ondelete="CASCADE"), nullable=False,  )
+    postUserId = Column(Integer, nullable=False )
     username = Column(String(25), nullable=False)
     email = Column(String, nullable=False)
     postTitle = Column(String, nullable=False)
     postContent = Column(String, nullable=False, unique=True)
+    up_votes = Column(Integer, nullable=False, server_default='0')
+    down_votes = Column(Integer, nullable=False, server_default='0')
     createdAt= Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))
     lastUpdatedAt= Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))
 
-class Vote(Base):
-    __tablename__ = "post_vote"
+class Post_Votes(Base):
+    __tablename__ = "post_votes"
 
-    vote_posts_id = Column(Integer, ForeignKey("user_posts.id", ondelete="CASCADE"),primary_key=True, nullable=False)
-    vote_users_id = Column(Integer, ForeignKey("user_reg_data.id", ondelete="CASCADE"),primary_key=True, nullable=False)
+    id=Column(Integer, primary_key=True, nullable=False)
+    post_id = Column(Integer, nullable=False)
+    user_id = Column(Integer, nullable=False)
+    vote_postTitle= Column(String, nullable=False)
+    vote_Author_Email= Column(String, nullable=False)
+    vote_Author_Username = Column(String, nullable=False)
+    up_votes_users= Column(JSON, nullable=False, server_default='[]')
+    down_votes_users= Column(JSON, nullable=False, server_default='[]')
 
