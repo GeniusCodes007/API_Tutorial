@@ -15,7 +15,7 @@ router = APIRouter(
 
 #response_model=orm_schemas_2.User_Response,
 @router.post("/create", status_code=status.HTTP_201_CREATED )
-def create_user(user_data: orm_schemas_2.UserRegData, db:Session=Depends(get_database)):
+def create_user(user_data: orm_schemas_2.CreateUser, db:Session=Depends(get_database)):
     try:
         #Check if username or email already exists
         # If the username is found, raise Exception
@@ -33,14 +33,21 @@ def create_user(user_data: orm_schemas_2.UserRegData, db:Session=Depends(get_dat
         user_data.password = orm_utils_2.hash_password(user_data.password)
 
 
-        # Fill up the User_Reg_Data Columns
-        new_user_reg_data = orm_models_2.User_Reg_Data(**user_data.model_dump())
+        # Create and fill up the User_Reg_Data Columns
+        new_user_reg_data = orm_models_2.User_Reg_Data(username=user_data.username, email=user_data.email,
+                                                       password=user_data.password, confirmed_password=user_data.confirmed_password)
 
         # Save User_Reg_Data to Database
         db.add(new_user_reg_data)
+
+        # Create and fill up the User_Personal_Data Columns
+        new_personal_data = orm_models_2.Personal_Data(username=user_data.username, email=user_data.email,
+                                                       surname=user_data.surname, firstname=user_data.firstname,
+                                                       lastname=user_data.lastname, is_adult=user_data.is_adult)
+        db.add(new_personal_data)
+
         db.commit()
         db.refresh(new_user_reg_data)
-
 
         raise HTTPException(status_code=status.HTTP_201_CREATED,
                             detail=f"Welcome aboard {new_user_reg_data.username}!!! Enjoy the New World of Technology")
@@ -48,34 +55,39 @@ def create_user(user_data: orm_schemas_2.UserRegData, db:Session=Depends(get_dat
         raise HTTPException(status_code=status.HTTP_409_CONFLICT,
                             detail="This email is already used by another user")
 
-@router.get("/username/{username}", status_code=status.HTTP_302_FOUND, response_model=orm_schemas_2.UserAccount)
-def get_user_by_username(username: str,db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
+@router.get("/username/{username_or_email}", status_code=status.HTTP_302_FOUND, response_model=orm_schemas_2.UserAccount)
+def get_user(username_or_email: str|EmailStr, db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
 
-    user_info = db.query(orm_models_2.Personal_Data).filter(orm_models_2.Personal_Data.username == username).first()
+    # Check if the user is logged in
+    if not current_user:
+        raise   HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
+                              detail="Login To Gain Access")
 
+    # Find record of user
+    user_info = db.query(orm_models_2.Personal_Data).filter(orm_models_2.Personal_Data.username == username_or_email or orm_models_2.Personal_Data.email == username_or_email).first()
+
+    # If None, raise Exception
     if not user_info:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                            detail="User Not Found")
-    # Set the fullname of the user
+                            detail=f"Details For {username_or_email} Not Found")
+
+    # Create an instance of UserAccount
+
+    # Set the attribute values for the UserAccount, to display the account info
     my_fullname= str(orm_models_2.Personal_Data.surname) + " " + str(orm_models_2.Personal_Data.firstname) + " " + str(orm_models_2.Personal_Data.lastname)
     my_username = str(orm_models_2.Personal_Data.username)
-    my_is_adult = orm_models_2.Personal_Data.is_adult
-    my_email = str(orm_models_2.Personal_Data.email)
+    my_email = orm_models_2.Personal_Data.email
 
-    personal_info: orm_models_2.Personal_Data = orm_models_2.Personal_Data(fullname=my_fullname,email=my_email, username=my_username,is_adult=my_is_adult)
+
+    personal_info: orm_schemas_2.UserAccount = orm_schemas_2.UserAccount(fullname=my_fullname,email=my_email, username=my_username)
     return personal_info
-
-@router.get("/email/{user_email}", status_code=status.HTTP_302_FOUND, response_model=orm_schemas_2.UserAccount)
-def get_user_by_email(user_email: EmailStr,db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
-
-    user_info = db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.email == user_email).first()
-    if not user_info:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                            detail="Email Not Found")
-    return user_info
 
 @router.patch("/{post_title}", status_code=status.HTTP_202_ACCEPTED, response_model=orm_schemas_2.UpdatePost)
 async def update_post(updated_post_schema: orm_schemas_2.UpdatePost, post_title: str ,db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
+
+    if not current_user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
+                            detail="Login To Gain Access")
 
     post_in_search = None
 
@@ -114,6 +126,10 @@ async def update_post(updated_post_schema: orm_schemas_2.UpdatePost, post_title:
 @router.put("/{post_title}", status_code=status.HTTP_202_ACCEPTED, response_model=orm_schemas_2.UpdatePost)
 async def change_entire_post_content(updated_post_schema: orm_schemas_2.UpdatePost, post_title: str ,db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
 
+    if not current_user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
+                            detail="Login To Gain Access")
+
     post_in_search = None
 
     # Search all possible posts with title, post_title
@@ -122,7 +138,7 @@ async def change_entire_post_content(updated_post_schema: orm_schemas_2.UpdatePo
     # If None, raise Exception
     if not all_users_posts:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                            detail=f"Posts With Title, {post_title}, Not Found")
+                            detail=f"Posts With Title, {post_title}, By You Not Found")
 
     # If it should be, find the post made by the user
     for user_post in all_users_posts:

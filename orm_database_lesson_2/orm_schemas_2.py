@@ -15,8 +15,6 @@ class UserRegData(BaseModel):
     created_at : datetime.datetime = datetime.datetime.now()
     confirmed_password : str = ""
 
-
-
     class Config:
         #orm_mode = True
         from_attributes = True
@@ -31,8 +29,6 @@ class UserPersonalData(BaseModel):
     firstname: str
     other_names: str = ""
     is_adult: bool
-    confirmed_password: str
-
 
     class Config:
         #orm_mode = True
@@ -71,6 +67,9 @@ class PostVotes(BaseModel):
 
 # Other Schemas
 
+class CreateUser(UserRegData, UserPersonalData):
+    pass
+
 # Schema for displaying user's updated post data from and collecting user's updated post data to, database
 class UpdatePost(BaseModel):
     username: str
@@ -86,7 +85,6 @@ class UpdatePost(BaseModel):
 class UserAccount(BaseModel):
     fullname: str
     username: str
-    is_adult: bool = True
     email: EmailStr
 
     class Config:

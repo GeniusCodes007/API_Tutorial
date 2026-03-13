@@ -18,7 +18,6 @@ class Personal_Data(Base):
     email = Column(String, nullable=False, unique=True)
     is_adult= Column(Boolean, nullable=False, server_default='0')
     created_at= Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))
-    confirmed_password = Column(String, nullable=False)
 
 class User_Reg_Data(Base):
     __tablename__ = "user_reg_data"
