@@ -4,7 +4,7 @@ from pydantic.v1 import BaseSettings
 
 class My_Settings(BaseSettings):
     database_hostname: str
-    database_port: str
+    database_port: int
     database_password: str
     database_name: str
     database_username: str
@@ -14,7 +14,7 @@ class My_Settings(BaseSettings):
 
     class Config:
         #env_prefix = "ORM_"
-        env_file = ".env"
+        env_file = "../.env"
 
 
 my_settings = My_Settings()

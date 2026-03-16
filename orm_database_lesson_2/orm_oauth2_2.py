@@ -1,6 +1,8 @@
 from jose import jwt, JWTError
 from datetime import datetime, timedelta
-import orm_schemas_2, orm_database_2, orm_models_2
+import orm_database_2
+from orm_database_lesson_2.my_models import orm_models_2
+from orm_database_lesson_2.my_schemas import orm_schemas_2
 from fastapi.security.oauth2 import OAuth2PasswordBearer
 from fastapi import Depends, status, HTTPException
 from sqlalchemy.orm import Session
