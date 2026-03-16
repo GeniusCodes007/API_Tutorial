@@ -1,10 +1,9 @@
 
 
 from sqlalchemy import Integer, String, Column, Boolean, JSON
-from orm_database_2 import Base
+from orm_database_lesson_2.orm_database_2 import Base
 from sqlalchemy.sql.expression import text
 from sqlalchemy.sql.sqltypes import TIMESTAMP
-
 
 
 class Personal_Data(Base):

@@ -20,7 +20,18 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     """Upgrade schema."""
-    pass
+    op.create_table("user_posts",
+                    sa.Column("id", sa.Integer, primary_key=True, nullable=False),
+                    sa.Column("postUserId", sa.Integer, nullable=False),
+                    sa.Column("username", sa.String, unique=True, nullable=False),
+                    sa.Column("email", sa.String, unique=True, nullable=False),
+                    sa.Column("postTitle", sa.String, nullable=False),
+                    sa.Column("postContent",sa.String, nullable=False, unique=True),
+                    sa.Column("up_votes",sa.Integer, nullable=False, server_default='0'),
+                    sa.Column("down_votes",sa.Integer, nullable=False, server_default='0'),
+                    sa.Column("created_at", sa.DateTime, nullable=False, server_default=sa.text("now()")),
+                    sa.Column("lastUpdatedAt",sa.DateTime, nullable=False, server_default=sa.text("now()")), )
+
 
 
 def downgrade() -> None:

@@ -2,8 +2,8 @@
 import sqlalchemy.exc
 from fastapi import HTTPException, Depends, status, APIRouter
 from sqlalchemy.orm import Session
-import orm_models_2, orm_schemas_2, orm_utils_2, orm_oauth2_2
-from orm_database_2 import get_database
+import orm_database_lesson_2.orm_models_2, orm_database_lesson_2.orm_schemas_2, orm_database_lesson_2.orm_utils_2, orm_database_lesson_2.orm_oauth2_2
+from orm_database_lesson_2.orm_database_2 import get_database
 from pydantic import EmailStr
 
 router = APIRouter(
@@ -13,16 +13,16 @@ router = APIRouter(
 
 
 
-#response_model=orm_schemas_2.User_Response,
+#response_model=orm_database_lesson_2.orm_schemas_2.User_Response,
 @router.post("/create", status_code=status.HTTP_201_CREATED )
-def create_user(user_data: orm_schemas_2.CreateUser, db:Session=Depends(get_database)):
+def create_user(user_data: orm_database_lesson_2.orm_schemas_2.CreateUser, db:Session=Depends(get_database)):
     try:
         #Check if username or email already exists
         # If the username is found, raise Exception
-        if db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.username == user_data.username).first() :
+        if db.query(orm_database_lesson_2.orm_models_2.User_Reg_Data).filter(orm_database_lesson_2.orm_models_2.User_Reg_Data.username == user_data.username).first() :
             raise HTTPException(status_code=409, detail="Username Already Registered")
 
-        if db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.email == user_data.email).first():
+        if db.query(orm_database_lesson_2.orm_models_2.User_Reg_Data).filter(orm_database_lesson_2.orm_models_2.User_Reg_Data.email == user_data.email).first():
             raise HTTPException(status_code=409, detail="Email Already Registered")
 
 
@@ -30,18 +30,18 @@ def create_user(user_data: orm_schemas_2.CreateUser, db:Session=Depends(get_data
         user_data.confirmed_password = user_data.password
 
         # Set the value of the user_data.password as a hash
-        user_data.password = orm_utils_2.hash_password(user_data.password)
+        user_data.password = orm_database_lesson_2.orm_utils_2.hash_password(user_data.password)
 
 
         # Create and fill up the User_Reg_Data Columns
-        new_user_reg_data = orm_models_2.User_Reg_Data(username=user_data.username, email=user_data.email,
+        new_user_reg_data = orm_database_lesson_2.orm_models_2.User_Reg_Data(username=user_data.username, email=user_data.email,
                                                        password=user_data.password, confirmed_password=user_data.confirmed_password)
 
         # Save User_Reg_Data to Database
         db.add(new_user_reg_data)
 
         # Create and fill up the User_Personal_Data Columns
-        new_personal_data = orm_models_2.Personal_Data(username=user_data.username, email=user_data.email,
+        new_personal_data = orm_database_lesson_2.orm_models_2.Personal_Data(username=user_data.username, email=user_data.email,
                                                        surname=user_data.surname, firstname=user_data.firstname,
                                                        lastname=user_data.lastname, is_adult=user_data.is_adult)
         db.add(new_personal_data)
@@ -55,8 +55,8 @@ def create_user(user_data: orm_schemas_2.CreateUser, db:Session=Depends(get_data
         raise HTTPException(status_code=status.HTTP_409_CONFLICT,
                             detail="This email is already used by another user")
 
-@router.get("/username/{username_or_email}", status_code=status.HTTP_302_FOUND, response_model=orm_schemas_2.UserAccount)
-def get_user(username_or_email: str|EmailStr, db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
+@router.get("/username/{username_or_email}", status_code=status.HTTP_302_FOUND, response_model=orm_database_lesson_2.orm_schemas_2.UserAccount)
+def get_user(username_or_email: str|EmailStr, db: Session = Depends(get_database), current_user: int=Depends(orm_database_lesson_2.orm_oauth2_2.get_current_user)):
 
     # Check if the user is logged in
     if not current_user:
@@ -64,7 +64,7 @@ def get_user(username_or_email: str|EmailStr, db: Session = Depends(get_database
                               detail="Login To Gain Access")
 
     # Find record of user
-    user_info = db.query(orm_models_2.Personal_Data).filter(orm_models_2.Personal_Data.username == username_or_email or orm_models_2.Personal_Data.email == username_or_email).first()
+    user_info = db.query(orm_database_lesson_2.orm_models_2.Personal_Data).filter(orm_database_lesson_2.orm_models_2.Personal_Data.username == username_or_email or orm_database_lesson_2.orm_models_2.Personal_Data.email == username_or_email).first()
 
     # If None, raise Exception
     if not user_info:
@@ -74,16 +74,16 @@ def get_user(username_or_email: str|EmailStr, db: Session = Depends(get_database
     # Create an instance of UserAccount
 
     # Set the attribute values for the UserAccount, to display the account info
-    my_fullname= str(orm_models_2.Personal_Data.surname) + " " + str(orm_models_2.Personal_Data.firstname) + " " + str(orm_models_2.Personal_Data.lastname)
-    my_username = str(orm_models_2.Personal_Data.username)
-    my_email = orm_models_2.Personal_Data.email
+    my_fullname= str(orm_database_lesson_2.orm_models_2.Personal_Data.surname) + " " + str(orm_database_lesson_2.orm_models_2.Personal_Data.firstname) + " " + str(orm_database_lesson_2.orm_models_2.Personal_Data.lastname)
+    my_username = str(orm_database_lesson_2.orm_models_2.Personal_Data.username)
+    my_email = orm_database_lesson_2.orm_models_2.Personal_Data.email
 
 
-    personal_info: orm_schemas_2.UserAccount = orm_schemas_2.UserAccount(fullname=my_fullname,email=my_email, username=my_username)
+    personal_info: orm_database_lesson_2.orm_schemas_2.UserAccount = orm_database_lesson_2.orm_schemas_2.UserAccount(fullname=my_fullname,email=my_email, username=my_username)
     return personal_info
 
-@router.patch("/{post_title}", status_code=status.HTTP_202_ACCEPTED, response_model=orm_schemas_2.UpdatePost)
-async def update_post(updated_post_schema: orm_schemas_2.UpdatePost, post_title: str ,db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
+@router.patch("/{post_title}", status_code=status.HTTP_202_ACCEPTED, response_model=orm_database_lesson_2.orm_schemas_2.UpdatePost)
+async def update_post(updated_post_schema: orm_database_lesson_2.orm_schemas_2.UpdatePost, post_title: str ,db: Session = Depends(get_database), current_user: int=Depends(orm_database_lesson_2.orm_oauth2_2.get_current_user)):
 
     if not current_user:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
@@ -92,7 +92,7 @@ async def update_post(updated_post_schema: orm_schemas_2.UpdatePost, post_title:
     post_in_search = None
 
     # Search all possible posts with title, post_title
-    all_users_posts = db.query(orm_models_2.User_Posts).filter(orm_models_2.User_Posts.postTitle == post_title).all()
+    all_users_posts = db.query(orm_database_lesson_2.orm_models_2.User_Posts).filter(orm_database_lesson_2.orm_models_2.User_Posts.postTitle == post_title).all()
 
     # If None, raise Exception
     if not all_users_posts:
@@ -115,16 +115,16 @@ async def update_post(updated_post_schema: orm_schemas_2.UpdatePost, post_title:
 
 
     # Unpack
-    db.query(orm_models_2.User_Posts).where(
-        orm_models_2.User_Posts.postTitle == post_title and orm_models_2.User_Posts.username == post_in_search.username).update(
+    db.query(orm_database_lesson_2.orm_models_2.User_Posts).where(
+        orm_database_lesson_2.orm_models_2.User_Posts.postTitle == post_title and orm_database_lesson_2.orm_models_2.User_Posts.username == post_in_search.username).update(
         updated_post_schema.model_dump(), synchronize_session=False)
     # Save changes made
     db.commit()
 
     return post_in_search
 
-@router.put("/{post_title}", status_code=status.HTTP_202_ACCEPTED, response_model=orm_schemas_2.UpdatePost)
-async def change_entire_post_content(updated_post_schema: orm_schemas_2.UpdatePost, post_title: str ,db: Session = Depends(get_database), current_user: int=Depends(orm_oauth2_2.get_current_user)):
+@router.put("/{post_title}", status_code=status.HTTP_202_ACCEPTED, response_model=orm_database_lesson_2.orm_schemas_2.UpdatePost)
+async def change_entire_post_content(updated_post_schema: orm_database_lesson_2.orm_schemas_2.UpdatePost, post_title: str ,db: Session = Depends(get_database), current_user: int=Depends(orm_database_lesson_2.orm_oauth2_2.get_current_user)):
 
     if not current_user:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
@@ -133,7 +133,7 @@ async def change_entire_post_content(updated_post_schema: orm_schemas_2.UpdatePo
     post_in_search = None
 
     # Search all possible posts with title, post_title
-    all_users_posts = db.query(orm_models_2.User_Posts).filter(orm_models_2.User_Posts.postTitle == post_title).all()
+    all_users_posts = db.query(orm_database_lesson_2.orm_models_2.User_Posts).filter(orm_database_lesson_2.orm_models_2.User_Posts.postTitle == post_title).all()
 
     # If None, raise Exception
     if not all_users_posts:
@@ -152,8 +152,8 @@ async def change_entire_post_content(updated_post_schema: orm_schemas_2.UpdatePo
 
 
     # Unpack
-    db.query(orm_models_2.User_Posts).where(
-        orm_models_2.User_Posts.postTitle == post_title and orm_models_2.User_Posts.username == post_in_search.username).update(
+    db.query(orm_database_lesson_2.orm_models_2.User_Posts).where(
+        orm_database_lesson_2.orm_models_2.User_Posts.postTitle == post_title and orm_database_lesson_2.orm_models_2.User_Posts.username == post_in_search.username).update(
         updated_post_schema.model_dump(), synchronize_session=False)
     # Save changes made
     db.commit()

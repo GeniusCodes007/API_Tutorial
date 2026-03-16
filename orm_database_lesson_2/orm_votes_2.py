@@ -1,10 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
-import orm_schemas_2
-#from orm_models import Post_Votes
-from orm_database_2 import get_database
+import orm_database_lesson_2.orm_schemas_2
+from orm_database_lesson_2.orm_database_2 import get_database
 from sqlalchemy.orm import Session
-import orm_oauth2_2
-import orm_models_2
+import orm_database_lesson_2.orm_oauth2_2
+import orm_database_lesson_2.orm_models_2
 
 
 
@@ -14,7 +13,7 @@ router = APIRouter(
 )
 
 @router.post("", status_code=status.HTTP_201_CREATED)
-def vote_(vote: orm_schemas_2.Vote, db: Session = Depends(get_database), current_user: int= Depends(orm_oauth2_2.get_current_user)):
+def vote_(vote: orm_database_lesson_2.orm_schemas_2.Vote, db: Session = Depends(get_database), current_user: int= Depends(orm_database_lesson_2.orm_oauth2_2.get_current_user)):
 
     user_post_to_find = None
     vote_post_to_find = None
@@ -25,10 +24,10 @@ def vote_(vote: orm_schemas_2.Vote, db: Session = Depends(get_database), current
                             detail="You're not an authentic user")
 
     # Find all post_votes with the required post_title
-    find_all_votes = db.query(orm_models_2.Post_Votes).filter(orm_models_2.Post_Votes.vote_postTitle == vote.post_title).all()
+    find_all_votes = db.query(orm_database_lesson_2.orm_models_2.Post_Votes).filter(orm_database_lesson_2.orm_models_2.Post_Votes.vote_postTitle == vote.post_title).all()
 
     # Find all posts with the required post_title
-    find_all_posts= db.query(orm_models_2.User_Posts).filter(orm_models_2.User_Posts.postTitle == vote.post_title).all()
+    find_all_posts= db.query(orm_database_lesson_2.orm_models_2.User_Posts).filter(orm_database_lesson_2.orm_models_2.User_Posts.postTitle == vote.post_title).all()
 
     # Narrow down search to find the particular vote
     for vote_post in find_all_votes:
@@ -80,7 +79,7 @@ def vote_(vote: orm_schemas_2.Vote, db: Session = Depends(get_database), current
                             detail=f"{vote.post_author_username_or_email}, You Cannot Vote Yourself")
 
     # Unpack items
-    db.query(orm_models_2.Post_Votes).filter(orm_models_2.Post_Votes.vote_postTitle == vote.post_title and (orm_models_2.Post_Votes.vote_Author_Email == vote.post_author_username_or_email or orm_models_2.Post_Votes.vote_Author_Username == vote.post_author_username_or_email)).update({
+    db.query(orm_database_lesson_2.orm_models_2.Post_Votes).filter(orm_database_lesson_2.orm_models_2.Post_Votes.vote_postTitle == vote.post_title and (orm_database_lesson_2.orm_models_2.Post_Votes.vote_Author_Email == vote.post_author_username_or_email or orm_database_lesson_2.orm_models_2.Post_Votes.vote_Author_Username == vote.post_author_username_or_email)).update({
         "post_id" : int(user_post_to_find.id),
     "user_id" : int(vote_post_to_find.user_id),
     "vote_postTitle": vote_post_to_find.vote_postTitle,
@@ -90,7 +89,7 @@ def vote_(vote: orm_schemas_2.Vote, db: Session = Depends(get_database), current
     "down_votes_users": vote_post_to_find.down_votes_users
     }, synchronize_session=False)
 
-    db.query(orm_models_2.User_Posts).filter(orm_models_2.User_Posts.postTitle == vote.post_title and (orm_models_2.User_Posts.username == vote.post_author_username_or_email or orm_models_2.User_Posts.email == vote.post_author_username_or_email)).update({
+    db.query(orm_database_lesson_2.orm_models_2.User_Posts).filter(orm_database_lesson_2.orm_models_2.User_Posts.postTitle == vote.post_title and (orm_database_lesson_2.orm_models_2.User_Posts.username == vote.post_author_username_or_email or orm_database_lesson_2.orm_models_2.User_Posts.email == vote.post_author_username_or_email)).update({
         "postUserId": user_post_to_find.postUserId,
     "email": user_post_to_find.email,
     "username": user_post_to_find.username,

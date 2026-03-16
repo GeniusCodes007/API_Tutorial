@@ -1,12 +1,10 @@
 from jose import jwt, JWTError
 from datetime import datetime, timedelta
-import orm_database_2
-from orm_database_lesson_2.my_models import orm_models_2
-from orm_database_lesson_2.my_schemas import orm_schemas_2
+import orm_database_lesson_2.orm_database_2, orm_database_lesson_2.orm_models_2, orm_database_lesson_2.orm_schemas_2
 from fastapi.security.oauth2 import OAuth2PasswordBearer
 from fastapi import Depends, status, HTTPException
 from sqlalchemy.orm import Session
-from config_2 import my_settings
+from orm_database_lesson_2.config_2 import my_settings
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
 
@@ -39,19 +37,19 @@ def verify_token(token: str, credentials_exception):
         if my_id is None:
             raise credentials_exception
 
-        token_data = orm_schemas_2.TokenResponse(access_token=token, token_type="bearer", token_id=str(my_id))
+        token_data = orm_database_lesson_2.orm_schemas_2.TokenResponse(access_token=token, token_type="bearer", token_id=str(my_id))
     except JWTError:
         raise credentials_exception
     return token_data
 
-def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(orm_database_2.get_database)):
+def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(orm_database_lesson_2.orm_database_2.get_database)):
 
     credentials_exception = HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
                                           detail="Could not validate credentials",
                                           headers={"WWW-Authenticate": "Bearer"})
     token = verify_token(token, credentials_exception)
 
-    user=db.query(orm_models_2.User_Reg_Data).filter(orm_models_2.User_Reg_Data.id == token.token_id).first()
+    user=db.query(orm_database_lesson_2.orm_models_2.User_Reg_Data).filter(orm_database_lesson_2.orm_models_2.User_Reg_Data.id == token.token_id).first()
 
 
     return user
