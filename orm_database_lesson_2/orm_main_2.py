@@ -39,6 +39,8 @@ except psycopg2.Error as e:
     print(e)
 
 
+def try_me():
+    pass
 # Include routers from other files within the directory and their routers
 app.include_router(orm_database_lesson_2.orm_production_2.router)
 app.include_router(orm_database_lesson_2.orm_root_2.my_router)
