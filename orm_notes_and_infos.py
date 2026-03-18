@@ -13,4 +13,10 @@ SQL Language and Syntax
 Advantages of ORMs- Object Relational Mapper
 -> Creation of database tables as Python models, and not 
 -> Queries can be made by python code, no Sql
+
+Commands to run
+-> 
+-> heroku login 
+-> heroku create geniuscodes07_orm_tutorial
+-> 
 """
