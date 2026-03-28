@@ -5,8 +5,11 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/my_vir_env.venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/my_vir_env/Include" />
+      <excludeFolder url="file://$MODULE_DIR$/my_vir_env/Lib" />
+      <excludeFolder url="file://$MODULE_DIR$/my_vir_env/Scripts" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (API_Tutorial) (2)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13 (API_Tutorial)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

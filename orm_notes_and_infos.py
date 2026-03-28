@@ -15,8 +15,27 @@ Advantages of ORMs- Object Relational Mapper
 -> Queries can be made by python code, no Sql
 
 Commands to run
--> 
+
+From Chrome:
+pip install pytz
+pip install PyQt6
+pip install PyQt5
+pip install passlib
+pip install Flask-SQLAlchemy
+pip install Flask
+pip install Flask-Migrate
+pip install aiofiles
+
+-> pip freeze > requirements.txt
 -> heroku login 
 -> heroku create geniuscodes07_orm_tutorial
--> 
+-> git push origin main 
+-> git push heroku main
+-> heroku addons:create heroku-postgresql
+-> heroku pq:psql
+
+
+
+For Cloner, run
+-> pip install -r requirements.txt
 """
