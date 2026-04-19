@@ -6,6 +6,10 @@ SQL Language and Syntax
 -> Offset: skips a given number of rows to give a desired result
 -> Insert Into: passes specific data into specific cells. Example, Insert Into user_info (username, surname, firstname, email, phone_contact) Values ('ugwujasimmy', 'Ugwuja', 'Simon', 'simmyugwuja@gmail.com', 09136457214)
 
+
+https://geniuscodes-fastapi-209d5ae42ead.herokuapp.com/ | https://git.heroku.com/geniuscodes-fastapi.git
+
+
 """
 
 
